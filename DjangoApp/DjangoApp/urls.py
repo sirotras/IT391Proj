@@ -19,7 +19,8 @@ from django.views.generic import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),    
-    path('', include('autocross.urls')),    
+    path('', include('autocross.urls')), 
+    path('accounts/', include('django.contrib.auth.urls')),   
 ]
 
 ##path('',  RedirectView.as_view(url='autocross/')),

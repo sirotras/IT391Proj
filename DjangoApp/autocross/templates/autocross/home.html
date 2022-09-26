@@ -7,5 +7,13 @@
 </head>
 <body>
     <h1>This Could be the HomePage</h1>
+    {% if user.is_authenticated %}
+    <p> You are logged in</p>
+    <p>Welcome: {{user.get_username}}</p>
+    <a href="{% url 'logout'%}?next={{request.path}}">Logout</a>
+    {%else%}
+    <p>You are not logged in</p>
+    <a href="{% url 'login'%}?next={{request.path}}">Login</a>
+    {%endif%}
 </body>
 </html>

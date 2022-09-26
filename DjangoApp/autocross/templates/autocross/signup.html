@@ -6,8 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>This could be a user's profile</h1>
-    <h1>Logged in users only!</h1>
-    
+    <h1> Register New User</h1>
+    <form method="POST">
+        {% csrf_token%}
+        {{form.as_p}}
+        <input type="submit" value="Sign-Up">
+    </form>
+
 </body>
 </html>

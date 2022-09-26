@@ -6,5 +6,6 @@ app_name = 'autocross'
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('user_profile/',  views.user_profile, name = 'user_profile')
+    path('user_profile/',  views.user_profile, name = 'user_profile'),
+    path('signup/', views.SignUpView.as_view(),name = 'signup'),
 ]
