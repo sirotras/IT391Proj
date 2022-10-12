@@ -39,85 +39,102 @@
         
 
         <!-- Accordion-->
-        <div class="accordion" id="accordionExample">
-          <style>
-      .accordion
-      {
-        background-color: #ffffff;
-        color: #444;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: center;
-        outline: none;
-        font-size: 15px;
-        transition: 0.4s;
-      }
-      
-      .active, .accordion:hover
-      {
-        background-color: #eee;
-      }
-      
-      .panel 
-      {
-        padding: 0 18px;
-        display: none;
-        background-color: white;
-        overflow: hidden;
-      }
-
-      .label
-      {
-        content: 'v';
-        color: black;
-        position: absolute;
-        top: 50%;
-        right: -5px;
-        font-size: 30px;
-        transform: trasnlateY(-50%);
-      }
+        <style>
+          .my-accordion .menu
+          {background-color:#ffffff;
+          color:#444;
+          cursor:pointer;
+          padding:12px;
+          width:100%;
+          text-align:left;
+          border:none;
+          outline:none;
+          margin-top:4px;
+          border-radius:8px;
+          font-size:inherit
+          }
+          .my-accordion .panel
+          {background-color:#FFFFFF;
+          color:#000000;
+          overflow:hidden
+          }
+          .my-accordion .open
+          {
+          display:block
+          }
+          .my-accordion 
+          .close
+          {
+          display:none
+          }
+          .my-accordion .active
+          {
+          background-color:#535658;
+          color:#fff
+          }
+          .my-accordion .arrow
+          {
+          float:right;
+          display:block
+          }
+          .my-accordion
+          .darrow
+          {
+          display:none
+          }
+          .my-accordion 
+          .active 
+          .darrow
+          {
+          display:block
+          }
+          .my-accordion 
+          .active 
+          .rarrow
+          {
+          display:none
+          }
+          .my-accordion 
+          .panel a
+          {
+          display:block;
+          background:#808080;
+          color:#FFFFFF;
+          padding:5px;
+          margin:3px;
+          width:100%;
+          text-decoration:none
+          }
         </style>
-  
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Race #1
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables.
-      </div>
-    </div>
-  </div>
-  
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Race #2
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
+          <div class="my-accordion">
+            <button class='menu'>
+              Race 1<span class='arrow rarrow'>
+                +</span><span class='arrow darrow'>
+                  -</span></button><div class='panel close'>
+                    <div style="padding:10px">Test</div>
 
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Race #3
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
+
+                  </div><button class='menu'>Race 2
+                    <span class='arrow rarrow'>
+                      +</span><span class='arrow darrow'>
+                        -</span></button><div class='panel close'>
+                          <div style="padding:10px">Test</div>
+
+
+                        </div><button class='menu'>Race 3
+                          <span class='arrow rarrow'>
+                            +</span><span class='arrow darrow'>
+                              -</span></button><div class='panel close'>
+                                <div style="padding:10px">Test</div></div></div>
+          <script>
+          !function()
+          {
+            for(var l=document.querySelectorAll(".my-accordion .menu"),e=0;e<l.length;e++)l[e].addEventListener("click",n);
+            function n(){for(var e=document.querySelectorAll(".my-accordion .panel"),n=0;n<e.length;n++)e[n].className="panel close";
+            if(-1==this.className.indexOf("active")){for(n=0;n<l.length;n++)l[n].className="menu";this.className="menu active",this.nextElementSibling.className="panel open"}else for(n=0;n<l.length;n++)l[n].className="menu"}
+          }();
+          </script>
+          
 </div>
       </ul>
     </div>
