@@ -1,0 +1,30 @@
+Rantoul, IL
+4-24-2022
+cone slayer sunday 
+1|1|XSTS|2|Emanuel Martin|1990 Mazda Miata| 45.923|*0.813 | 45.923|0.000|0.000|
+2|1|CAMS|66|Dean Plumadore|2017 Chevrolet Vette GS| 56.565|*0.838 | 47.401|1.478|1.478|
+3|2|XBS|7|Tim Oyer|2010 Lotus Evora| 47.843|*0.818 | 47.843|0.442|1.920|
+4|1|DS|343|Andrew Pelz|2021 Mini Cooper S Hardtop| 59.678|*0.807 | 48.160|0.317|2.237|
+5|1|STS|12|Shreyans Mittal|Mazda 1990 Mazda Miata|59.331|*0.813 | 48.236|0.076|2.313|
+6|1|ES|96|Emily Skoglund|2000 Mazda Miata| 60.932|*0.792 | 48.258|0.022|2.335|
+7|2|ES|92|Emilia Wright|2001 Mazda Miata| 61.584|*0.792 | 48.774|0.516|2.851|
+8|1|BS|53|SuHong Kim|2010 Lotus Evora|59.783|*0.818 | 48.902|0.128|2.979|
+9|1|XSA|180|Andriy Sytyashenko|2015 Subaru WRX STI|58.115|*0.842 | 48.932|0.030|3.009|
+10|2|XSA|80|Ryan Willen|2015 Subaru Impreza WRX STI|58.310|*0.842 | 49.097|0.165|3.174|
+11|2|CAMS|124|Jullie Miller|2019 Chevrolet Corvette| 58.731|*0.838 | 49.216|0.119|3.293|
+12|1|GS|42|Shivang Patel|2021 Audi A4|62.534|*0.794 | 49.652|0.436|3.729|
+13|2|DS|43|Shiv Patel|2022 Toyota GR86| 61.576|*0.807 | 49.691|0.039|3.768|
+14|3|DS|415|Mitchell Payne|2004 Infiniti g35| 61.599|*0.807 | 49.710|0.019|3.787|
+15|3|CAMS|119|Doug Miller|2019 Chevrolet Corvette| 60.006|*0.838 | 50.285|0.575|4.362|
+16|1|CAMC|327|Bradley Anderson|2014 Ford Mustang GT|61.473|*0.819 | 50.346|0.061|4.423|
+17|1|FSP|27|Daniel Marx|1982 Renault Leaker|61.420|*0.824 | 50.610|0.264|4.687|
+18|3|ES|128|Jordan Polansky|1999 Mazda Miata 10AE| 64.197|*0.792 | 50.844|0.234|4.921|
+19|1|STR|111|Jason Zhang|2002 Honda S2000| 61.980|*0.828 | 51.319|0.475|5.396|
+20|1|FS|36|Yicheng Zhou|2015 BMW 435xi| 65.328|*0.814 | 53.177|1.858|7.254|
+21|2|CAMC|160|Jedi Brown|Lincoln MKZ|65.601|*0.819 | 53.727|0.550|7.804|
+22|2|FS|74|Mark Bates|BMW E60 535i| 67.231|*0.814 | 54.726|0.999|8.803|
+23|3|CAMC|60|Cathleen Burkholder|2006 Ford Mustang GT  2006|67.377|*0.819 | 55.181|0.455|9.258|
+24|4|CAMS|661|Kevin Breheny|2017 Chevrolet Corvette GS| 65.855|*0.838 | 55.186|0.005|9.263|
+25|1|HS|20|Robert Bates|2013 Volvo C30|72.717|*0.786 | 57.155|1.969|11.232|
+26|2|HS|82|Christopher Bates|2016 Volvo|77.559|*0.786 | 60.961|3.806|15.038|
+27|4|CAMC|171|armand Miramontes|2012 Chevrolet camaro|DNS|*0.819 ||||

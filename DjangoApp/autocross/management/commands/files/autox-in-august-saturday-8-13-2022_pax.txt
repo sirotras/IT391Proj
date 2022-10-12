@@ -1,0 +1,74 @@
+Rantoul, IL
+8-13-2022
+autox in august saturday 
+1|1|XSTS|6|Andrew Salazar|1990 Mazda Miata| 42.765|*0.813 | 42.765|0.000|0.000|
+2|2|XSSC|125|Aldo Flores|2016 Scion FR-S| 43.277|*0.809 | 43.277|0.512|0.512|
+3|3|XSTS|24|Xufeng Tang|2020 Mazda MX-5| 43.527|*0.813 | 43.527|0.250|0.762|
+4|1|SS|41|Clark Walker|2018 Porsche 718 Boxster GTS| 52.564|*0.830 | 43.628|0.101|0.863|
+5|1|SSC|229|Brian Jones|2013 Scion FRS| 54.136|*0.809 | 43.796|0.168|1.031|
+6|4|XCS|95|Barrett Adair|2021 Mazda Miata| 43.915|*0.810 | 43.915|0.119|1.150|
+7|5|XHS|127|Daniel Marx|2004 Mini Cooper| 44.233|*0.786 | 44.233|0.318|1.468|
+8|6|XSTS|2|Emanuel Martin|1990 Mazda Miata| 44.405|*0.813 | 44.405|0.172|1.640|
+9|1|AS|135|JZ Zhong|2018 BMW M3cs| 54.331|*0.821 | 44.605|0.200|1.840|
+10|1|SSP|377|Tianyi Ma|1995 Mazda Rx7| 44.611|*0.853 | 44.611|0.006|1.846|
+11|2|AS|20|Jacob Goldenbaum|2010 Chevrolet Corvette Grand Sport| 54.457|*0.821 | 44.709|0.098|1.944|
+12|1|STS|21|Shreyans Mittal|Mazda 1990 Mazda Miata| 55.053|*0.813 | 44.758|0.049|1.993|
+13|2|SSC|152|Carla Flores|2016 Scion FR-S| 55.381|*0.809 | 44.803|0.045|2.038|
+14|7|XSS|71|Chris Armstrong|2012 Porsche Boxster Spyder| 45.195|*0.830 | 45.195|0.392|2.430|
+15|2|SSP|814|Kerry Riley|2022 Porsche GT3| 45.251|*0.853 | 45.251|0.056|2.486|
+16|3|SSP|217|Philip Burkhart|1993 Mazda RX7| 45.422|*0.849 | 45.422|0.171|2.657|
+17|1|ES|294|Glenn Beccue|1999 Mazda Miata| 57.780|*0.792 | 45.761|0.339|2.996|
+18|1|BS|414|Rossen Jeliazkov|2018 Audi RS3| 45.809|*0.818 | 45.809|0.048|3.044|
+19|1|DS|511|Ernest Roales|2019 Honda Civic Type R| 45.866|*0.807 | 45.866|0.057|3.101|
+20|2|DS|211|Sang Park|2022 Hyundai Elantra N| 45.977|*0.807 | 45.977|0.111|3.212|
+21|3|DS|714|Jared Murphy|2016 Ford Focus RS| 46.071|*0.807 | 46.071|0.094|3.306|
+22|1|FS|69|Brian Catt|2021 Ford Mustang| 56.660|*0.814 | 46.121|0.050|3.356|
+23|4|DS|945|Tyler James|2017 Ford Focus RS| 46.229|*0.807 | 46.229|0.108|3.464|
+24|5|DS|31|SuHong Kim|2019 Hyundai Korean Pride| 46.548|*0.807 | 46.548|0.319|3.783|
+25|6|DS|415|Mitchell Payne|2004 Infiniti g35| 46.573|*0.807 | 46.573|0.025|3.808|
+26|3|AS|35|Ziang Xiao|2018 BMW M3cs| 56.737|*0.821 | 46.581|0.008|3.816|
+27|1|XSB|73|Scott Spear|2002 Mazda Miata| 54.807|*0.851 | 46.640|0.059|3.875|
+28|2|ES|90|Matt Hill|1990 Mazda Miata| 58.957|*0.792 | 46.693|0.053|3.928|
+29|1|STH|346|Greg Johnson|2018 Subaru BRZ tS| 46.846|*0.817 | 46.846|0.153|4.081|
+30|2|STS|791|Ryan Sandberg|1998 Dodge Neon| 57.626|*0.813 | 46.849|0.003|4.084|
+31|2|STH|75|Rick Uppole|2011 Mini countryman| 46.920|*0.812 | 46.920|0.071|4.155|
+32|1|STU|74|Matthew Usher|Nissan 370Z| 47.128|*0.829 | 47.128|0.208|4.363|
+33|7|DS|10|Charles Coleman|2016 Ford Focus RS| 47.312|*0.807 | 47.312|0.184|4.547|
+34|1|SST|140|Graham Rowsell|2000 Honda S2000| 56.454|*0.841 | 47.477|0.165|4.712|
+35|8|DS|120|Hugo Ji|2019 Hyundai Veloster Turbo| 47.545|*0.794 | 47.545|0.068|4.780|
+36|9|DS|711|Jin Bang|2013 Subaru STI| 47.608|*0.807 | 47.608|0.063|4.843|
+37|1|SMF|771|Luis Michel|2020 Honda Civic| 56.569|*0.845 | 47.800|0.192|5.035|
+38|1|CAMS|111|Jason Zhang|2002 Chevrolet Corvette| 57.046|*0.838 | 47.804|0.004|5.039|
+39|2|SST|40|Nick Strahan|2000 Honda S2000| 57.071|*0.841 | 47.996|0.192|5.231|
+40|2|SS|799|William Hammac|2023 Chevrolet Corvette| 57.926|*0.830 | 48.078|0.082|5.313|
+41|2|CAMS|13|Tyler Blunier|2002 Chevrolet Z06 corvette| 58.101|*0.838 | 48.688|0.610|5.923|
+42|2|FS|707|Dylan Tolonen|2015 Ford Mustang GT| 59.839|*0.814 | 48.708|0.020|5.943|
+43|1|XSA|571|Joshua Johnson|2011 Subaru Impreza WRX STi Hatchback| 58.031|*0.842 | 48.862|0.154|6.097|
+44|2|XSB|14|Victor Eloy|2001 Mazda Miata| 57.762|*0.851 | 49.155|0.293|6.390|
+45|3|FS|36|Yicheng Zhou|2015 BMW 435xi| 60.423|*0.814 | 49.184|0.029|6.419|
+46|1|CAMT|148|Dan Cothern|1994 Pontiac Trans Am| 61.438|*0.816 | 50.133|0.949|7.368|
+47|2|XSA|32|Letian Gu|1990 Nissan Skyline GTR| 60.023|*0.842 | 50.539|0.406|7.774|
+48|2|CAMT|11|Brendan Cameron|2003 Ford F150 SVT| 62.438|*0.816 | 50.949|0.410|8.184|
+49|10|DS|4|Simeon Pratt|2008 Subaru Impreza WRX| 51.101|*0.807 | 51.101|0.152|8.336|
+50|3|ES|201|Caleb Smoes|2001 Mazda Miata| 65.078|*0.792 | 51.541|0.440|8.776|
+51|11|DS|108|Daivik Joshi|2018 Subaru STi| 52.363|*0.807 | 52.363|0.822|9.598|
+52|1|NOV|97|Olivia Hammac|2023 Chevrolet Corvette| 54.672|*1.000 | 54.672|2.309|11.907|
+53|2|SMF|977|Kevin Oviedo|2007 Chevrolet Cobalt SS| 66.239|*0.845 | 55.972|1.300|13.207|
+54|2|NOV|190|Matthew Feagley|1990 Mazda| 58.058|*1.000 | 58.058|2.086|15.293|
+55|3|NOV|794|Tucker VanVoorhis|2011 Chevrolet Corvette Z06| 58.603|*1.000 | 58.603|0.545|15.838|
+56|4|NOV|3|Jaden Lee|2020 Hyundai Veloster N| 60.014|*1.000 | 60.014|1.411|17.249|
+57|5|NOV|118|Ken Zhou|2012 Audi S5| 60.588|*1.000 | 60.588|0.574|17.823|
+58|6|NOV|34|Aaron Sherman|2020 Subaru WRX| 62.199|*1.000 | 62.199|1.611|19.434|
+59|7|NOV|12|Christopher Vrba|2005 Pontiac Gto| 63.287|*1.000 | 63.287|1.088|20.522|
+60|8|NOV|171|Jeff Johnson|2022 Mazda Mx-5 RF| 63.785|*1.000 | 63.785|0.498|21.020|
+61|9|NOV|1|Brandon Park|2015 Volkswagen Golf R| 63.836|*1.000 | 63.836|0.051|21.071|
+62|10|NOV|131|Kevin Drewel|2010 Ford Mustang Gt| 64.301|*1.000 | 64.301|0.465|21.536|
+63|11|NOV|79|Lillian Sandberg|1998 Dodge Neon| 65.638|*1.000 | 65.638|1.337|22.873|
+64|12|NOV|179|Anna Sandberg|1998 Dodge Neon| 72.531|*1.000 | 72.531|6.893|29.766|
+65|13|NOV|17|Patrick Butler|1999 Chevrolet Camaro|DNF|*1.000 |-|||
+66|4|AS|64|Jim Landes|2013 Chevrolet Corvette|DNS|*0.821 ||||
+67|2|BS|321|Lukasz Parzygnat|2004 Honda S2000|DNS|*0.810 ||||
+68|3|STH|110|Gregory Gobeli|2003 Volkswagen GTI|DNS|*0.812 ||||
+69|2|STU|718|Tyler Bird|2003 Mazda Miata|DNS|*0.828 ||||
+70|3|CAMT|277|Alex Welch|1994 Ford Mustang|DNS|*0.816 ||||
+71|14|NOV|47|Sarah Usher|Nissan 370Z|DNS|*1.000 ||||

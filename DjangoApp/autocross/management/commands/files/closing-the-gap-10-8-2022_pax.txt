@@ -1,0 +1,78 @@
+Rantoul, IL
+10-8-2022
+closing the gap 
+1|1|XSTS|2|Emanuel Martin|1990 Mazda Miata| 41.471|*0.813 | 41.471|0.000|0.000|
+2|2|XSTS|6|Andrew Salazar|1990 Mazda Miata| 41.476|*0.813 | 41.476|0.005|0.005|
+3|3|XAS|390|William Damhoff|2003 Chevrolet Corvette Z06| 41.976|*0.821 | 41.976|0.500|0.505|
+4|4|XFSP|7|Tim Oyer|2002 Ford Zx2| 42.086|*0.824 | 42.086|0.110|0.615|
+5|1|SS|198|Dustin Neuville|2018 Chevrolet Corvette Z06| 42.233|*0.830 | 42.233|0.147|0.762|
+6|2|SS|215|Dave Becker|2021 Chevrolet Corvette| 42.370|*0.830 | 42.370|0.137|0.899|
+7|5|XCS|50|Barrett Adair|2021 Mazda Miata| 42.437|*0.810 | 42.437|0.067|0.966|
+8|6|XSTR|24|Xufeng Tang|2020 Mazda MX-5| 43.065|*0.828 | 43.065|0.628|1.594|
+9|7|XES|69|Andriy Sytyashenko|2000 Mazda Miata| 43.129|*0.792 | 43.129|0.064|1.658|
+10|3|SS|200|Jacob Goldenbaum|2010 Chevrolet Corvette Grand Sport| 43.328|*0.821 | 43.328|0.199|1.857|
+11|1|XSA|655|Tianyi Ma|1995 Mazda Rx7| 51.544|*0.842 | 43.400|0.072|1.929|
+12|8|XES|529|Mark Groseth|1996 Mazda Miata R| 43.413|*0.792 | 43.413|0.013|1.942|
+13|1|CAMS|66|Dean Plumadore|2017 Chevrolet Vette GS| 51.850|*0.838 | 43.450|0.037|1.979|
+14|1|BS|1414|Jedi Brown|Lincoln MKZ| 53.401|*0.818 | 43.682|0.232|2.211|
+15|2|BS|414|Rossen Jeliazkov|2018 Audi RS3| 54.053|*0.818 | 44.215|0.533|2.744|
+16|4|SS|71|Chris Armstrong|2012 Porsche Boxster Spyder| 44.419|*0.830 | 44.419|0.204|2.948|
+17|1|ES|169|Emily Skoglund|2000 Mazda Miata| 56.100|*0.792 | 44.431|0.012|2.960|
+18|1|STU|46|John Gregory|2007 Nissan 350Z| 53.640|*0.829 | 44.467|0.036|2.996|
+19|1|DS|36|Yicheng Zhou|2022 Subaru BRZ| 55.104|*0.807 | 44.468|0.001|2.997|
+20|2|DS|86|Shivang Patel|2023 Toyota GR86| 55.199|*0.807 | 44.545|0.077|3.074|
+21|2|ES|369|Paul Nurmi|2002 Mazda Miata| 56.463|*0.792 | 44.718|0.173|3.247|
+22|3|DS|43|Phil Rowsell|2017 Subaru BRZ| 55.451|*0.807 | 44.749|0.031|3.278|
+23|1|FS|68|Brian Catt|2021 Ford Mustang| 55.312|*0.814 | 45.024|0.275|3.553|
+24|1|STR|174|Aaron Rorem|2003 BMW Z4| 54.641|*0.828 | 45.242|0.218|3.771|
+25|3|ES|90|Matt Hill|1990 Mazda Miata| 57.283|*0.792 | 45.368|0.126|3.897|
+26|2|STR|13|Shiv Patel|2022 Toyota GR86| 54.807|*0.828 | 45.380|0.012|3.909|
+27|2|CAMS|661|Jim Landes|2017 Chevrolet Corvette GS| 54.187|*0.838 | 45.408|0.028|3.937|
+28|1|STX|346|Greg Johnson|2018 Subaru BRZ tS| 45.539|*0.817 | 45.539|0.131|4.068|
+29|4|DS|415|Mitchell Payne|2004 Infiniti g35| 56.486|*0.807 | 45.584|0.045|4.113|
+30|1|HS|64|Tyler Landes|2015 Mazda 6| 58.142|*0.786 | 45.699|0.115|4.228|
+31|1|CS|143|Graham Rowsell|2013 Mazda Miata| 45.943|*0.810 | 45.943|0.244|4.472|
+32|2|HS|164|Evan Landes|2015 Mazda 6| 58.543|*0.786 | 46.014|0.071|4.543|
+33|2|STU|74|Matthew Usher|Nissan 370Z| 56.149|*0.829 | 46.547|0.533|5.076|
+34|2|FS|11|Kevin Zhou|2020 Chevrolet Camaro| 57.416|*0.814 | 46.736|0.189|5.265|
+35|3|STR|741|Alex Anastasiadis|2003 BMW Z4| 56.516|*0.828 | 46.795|0.059|5.324|
+36|3|FS|91|Yuren Zhou|2020 Chevrolet Camaro SS 1LE| 58.162|*0.814 | 47.343|0.548|5.872|
+37|2|CS|431|Nick Strahan|2013 Mazda Miata| 47.484|*0.810 | 47.484|0.141|6.013|
+38|2|XSA|571|Joshua Johnson|2011 Subaru Impreza WRX STi Hatchback| 56.479|*0.842 | 47.555|0.071|6.084|
+39|4|STR|124|Jason Zhang|Mazda Miataaaaa| 58.355|*0.828 | 48.317|0.762|6.846|
+40|3|STU|67|Mario Khazoum|2006 Nissan 350Z| 58.517|*0.829 | 48.510|0.193|7.039|
+41|1|CAMC|41|Brendan Cameron|2003 Ford F150 SVT| 59.988|*0.819 | 49.130|0.620|7.659|
+42|4|ES|101|Caleb Smoes|2001 Mazda Miata| 62.173|*0.792 | 49.241|0.111|7.770|
+43|2|CAMC|48|Dan Cothern|1994 Pontiac Trans Am| 60.210|*0.819 | 49.312|0.071|7.841|
+44|3|XSA|26|Mark Cho|Porsche 718 GT4| 58.974|*0.842 | 49.656|0.344|8.185|
+45|3|CAMC|88|Christopher Vrba|2005 Pontiac Gto| 60.879|*0.819 | 49.859|0.203|8.388|
+46|3|CS|710|Jeff Johnson|2022 Mazda Mx-5 RF| 50.064|*0.810 | 50.064|0.205|8.593|
+47|4|FS|18|yuxin wang|2007 m6 | 61.929|*0.814 | 50.410|0.346|8.939|
+48|5|FS|30|Bowen Ding|2018 Chevrolet Camaro| 61.995|*0.814 | 50.463|0.053|8.992|
+49|1|NOV|80|Dylan Huey|2012 Audi S4| 55.021|*1.000 | 55.021|4.558|13.550|
+50|2|NOV|28|Michael Zhou|2017 Alfa Romeo Guilia QV| 55.994|*1.000 | 55.994|0.973|14.523|
+51|3|NOV|20|Yubo Xia|2019 Honda Civic Type R| 56.989|*1.000 | 56.989|0.995|15.518|
+52|4|NOV|16|Jaden Lee|2020 Toyota GR Supra| 57.571|*1.000 | 57.571|0.582|16.100|
+53|5|NOV|117|Tyler Matuszczak|2001 Honda S2000| 58.706|*1.000 | 58.706|1.135|17.235|
+54|6|NOV|40|Craig Ulmer|2010 BMW 135i M Sport| 59.271|*1.000 | 59.271|0.565|17.800|
+55|7|NOV|999|Yintao Zhou|2018 Alfa Romeo| 59.909|*1.000 | 59.909|0.638|18.438|
+56|8|NOV|128|Bill Yang|2017 Alfa Romeo Giulia QV| 60.229|*1.000 | 60.229|0.320|18.758|
+57|9|NOV|114|Yintong Zhang|2013 Mazda MX-5 Miata| 60.793|*1.000 | 60.793|0.564|19.322|
+58|10|NOV|99|Itamar Kaplansky|2015 Ford Fusion| 61.429|*1.000 | 61.429|0.636|19.958|
+59|11|NOV|44|Kejie Zhu|2022 BMW m4| 62.020|*1.000 | 62.020|0.591|20.549|
+60|12|NOV|96|Yibai Wang|2022 Subaru BRZ| 62.956|*1.000 | 62.956|0.936|21.485|
+61|13|NOV|31|Alana Gomoll|2011 Mazda mx-5 touring| 63.200|*1.000 | 63.200|0.244|21.729|
+62|14|NOV|196|Tyler Jenkins|1990 Mazda Miata| 64.321|*1.000 | 64.321|1.121|22.850|
+63|15|NOV|130|Torin McHone|2004 Pontiac gto| 64.330|*1.000 | 64.330|0.009|22.859|
+64|16|NOV|307|Seth Denhart|2004 Pontiac Gto| 64.920|*1.000 | 64.920|0.590|23.449|
+65|17|NOV|77|Fernando Pascual|2008 BMW 335i| 65.007|*1.000 | 65.007|0.087|23.536|
+66|18|NOV|310|Noah Gomez|2004 Pontiac GTO| 65.170|*1.000 | 65.170|0.163|23.699|
+67|19|NOV|15|Nathan Gonzalez|2017 Ford Mustang gt| 66.022|*1.000 | 66.022|0.852|24.551|
+68|20|NOV|63|Daniel Kaplansky|2013 Chevrolet Impala| 66.201|*1.000 | 66.201|0.179|24.730|
+69|21|NOV|27|Rebecca Saul|2001 Ford Mustang| 67.460|*1.000 | 67.460|1.259|25.989|
+70|22|NOV|730|Alexander Dinger|2004 Pontiac GTO| 68.404|*1.000 | 68.404|0.944|26.933|
+71|23|NOV|301|Jose DonJuan|2004 Pontiac Gto| 72.180|*1.000 | 72.180|3.776|30.709|
+72|5|ES|42| |2000 Mazda Miata|DNS|*0.792 ||||
+73|3|HS|320|Mohammad Qasim|2008 Honda Civic Si|DNS|*0.786 ||||
+74|2|STX|308|Carlos Diaz|1993 Mazda Miata|DNS|*0.813 ||||
+75|5|STR|113|SuHong Kim|2022 Toyota 86|DNS|*0.828 ||||

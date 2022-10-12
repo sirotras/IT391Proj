@@ -1,0 +1,59 @@
+Rantoul, IL
+09-03-2022
+you shall not pass 
+1|1|STX|721|Justin Wrighton|2013 Scion FRS| 35.733|*0.817 | 35.733|0.000|0.000|
+2|1|AS|200|Jacob Goldenbaum|2010 Chevrolet Corvette Grand Sport|44.267|*0.821 | 36.343|0.610|0.610|
+3|1|XSTS|2|Emanuel Martin|1990 Mazda Miata| 36.376|*0.813 | 36.376|0.033|0.643|
+4|2|XSTR|24|Xufeng Tang|2020 Mazda MX-5| 36.385|*0.828 | 36.385|0.009|0.652|
+5|1|CAMT|33|Dickie Lee Gregory|1969 Chevrolet Camaro| 36.636|*0.816 | 36.636|0.251|0.903|
+6|3|XCS|5|Barrett Adair|2021 Mazda Miata| 36.713|*0.810 | 36.713|0.077|0.980|
+7|1|SS|14|Clark Walker|2018 Porsche 718 Boxster GTS|44.317|*0.830 | 36.783|0.070|1.050|
+8|1|DS|172|Rob Bealer|Subaru Brz|45.720|*0.807 | 36.896|0.113|1.163|
+9|1|SSP|217|Philip Burkhart|1993 Mazda RX7| 37.003|*0.849 | 37.003|0.107|1.270|
+10|2|DS|27|Mike Bealer|2022 Subaru BRZ|45.953|*0.807 | 37.084|0.081|1.351|
+11|1|FS|169|Jason Daily|2021 Ford Mustang Mach 1|45.594|*0.814 | 37.113|0.029|1.380|
+12|2|CAMT|327|Bradley Anderson|2014 Ford Mustang GT| 37.398|*0.819 | 37.398|0.285|1.665|
+13|2|SSP|814|Kerry Riley|2022 Porsche GT3| 37.503|*0.853 | 37.503|0.105|1.770|
+14|1|CAMS|66|Dean Plumadore|2017 Chevrolet Vette GS|44.898|*0.838 | 37.624|0.121|1.891|
+15|2|SS|71|Chris Armstrong|2012 Porsche Boxster Spyder|45.395|*0.830 | 37.677|0.053|1.944|
+16|2|STX|12|Shreyans Mittal|Mazda 1990 Mazda Miata| 37.691|*0.813 | 37.691|0.014|1.958|
+17|1|ES|294|Glenn Beccue|1999 Mazda Miata|47.841|*0.792 | 37.890|0.199|2.157|
+18|2|FS|49|Daniel Young|2020 Ford Mustang Shelby GT350|46.659|*0.814 | 37.980|0.090|2.247|
+19|2|AS|111|James Merica|2014 Porsche Cayman S|46.311|*0.821 | 38.021|0.041|2.288|
+20|1|BS|53|SuHong Kim|2010 Toyota Highlander TOW PACKAGE|46.603|*0.818 | 38.121|0.100|2.388|
+21|1|HS|714|Jared Murphy|2013 Fiat 500 Abarth|48.593|*0.786 | 38.194|0.073|2.461|
+22|2|CAMS|166|Jim Landes|2017 Chevrolet Corvette GS|45.602|*0.838 | 38.214|0.020|2.481|
+23|2|BS|414|Rossen Jeliazkov|2018 Audi RS3|46.796|*0.818 | 38.279|0.065|2.546|
+24|3|DS|415|Mitchell Payne|2004 Infiniti g35|47.772|*0.807 | 38.552|0.273|2.819|
+25|3|AS|35|Ziang Xiao|2018 BMW M3cs|47.046|*0.821 | 38.624|0.072|2.891|
+26|3|FS|69|Brian Catt|2021 Ford Mustang|47.568|*0.814 | 38.720|0.096|2.987|
+27|1|STH|75|Rick Uppole|2011 Mini countryman|47.711|*0.812 | 38.741|0.021|3.008|
+28|4|AS|208|David Goldenbaum|2010 Chevrolet Corvette Grand Sport|47.208|*0.821 | 38.757|0.016|3.024|
+29|2|ES|369|Paul Nurmi|2002 Mazda Miata|49.104|*0.792 | 38.890|0.133|3.157|
+30|5|AS|11|Russ Bedford|Chevrolet Corvette|47.468|*0.821 | 38.971|0.081|3.238|
+31|3|BS|1|Julio Crispin|2019 Audi Tts|47.756|*0.818 | 39.064|0.093|3.331|
+32|1|XSA|771|Luis Michel|2020 Honda Civic| 39.079|*0.845 | 39.079|0.015|3.346|
+33|4|BS|531|Jason Zhang|Lotus Evora|47.873|*0.818 | 39.160|0.081|3.427|
+34|5|BS|308|Carlos Diaz|1993 Mazda Miata|48.213|*0.818 | 39.438|0.278|3.705|
+35|2|HS|127|Daniel Marx|2004 Mini Cooper|50.358|*0.786 | 39.581|0.143|3.848|
+36|2|STH|110|Gregory Gobeli|2003 Volkswagen GTI|49.029|*0.812 | 39.811|0.230|4.078|
+37|6|BS|13|Joy Young|2019 Audi Tts|48.826|*0.818 | 39.939|0.128|4.206|
+38|3|CAMT|87|John Martin|1987 Chevrolet R10| 40.221|*0.816 | 40.221|0.282|4.488|
+39|4|FS|16|Kevin Zhou|2020 Chevrolet Camaro|49.827|*0.814 | 40.559|0.338|4.826|
+40|5|FS|36|Yicheng Zhou|2019 Mercedes-Benz AMG C43 4matic|49.854|*0.814 | 40.581|0.022|4.848|
+41|2|XSA|26|Connor Whittington|1994 Mazda Miata| 40.651|*0.851 | 40.651|0.070|4.918|
+42|3|XSA|571|Joshua Johnson|2011 Subaru Impreza WRX STi Hatchback| 41.280|*0.842 | 41.280|0.629|5.547|
+43|4|XSA|57|Victor Eloy|2001 Mazda Miata| 42.122|*0.883 | 42.122|0.842|6.389|
+44|1|NOV|794|Tucker VanVorrhis|Corvette|46.033|*1.000 | 46.033|3.911|10.300|
+45|2|NOV|80|Dylan Huey|Cayman S|48.532|*1.000 | 48.532|2.499|12.799|
+46|3|NOV|85|Henry Xu|2018 BMW M2|49.096|*1.000 | 49.096|0.564|13.363|
+47|4|NOV|28|Michael Zhou|2020 Alfa Romeo Guilia Q4|49.229|*1.000 | 49.229|0.133|13.496|
+48|5|NOV|81|Jack Yan|Cayman S|50.417|*1.000 | 50.417|1.188|14.684|
+49|6|NOV|25|Patrick Lott|2006 Chevrolet Corvette|52.204|*1.000 | 52.204|1.787|16.471|
+50|7|NOV|126|Bill Yang|2020 Alfa Romeo Giulia Q4|53.064|*1.000 | 53.064|0.860|17.331|
+51|8|NOV|133|Joe Yin|2019 Mercedes-Benz AMG C43|53.840|*1.000 | 53.840|0.776|18.107|
+52|9|NOV|122|George Arango|2007 Chevrolet Corvette|54.429|*1.000 | 54.429|0.589|18.696|
+53|10|NOV|30|Bowen |Camero|55.025|*1.000 | 55.025|0.596|19.292|
+54|11|NOV|134|Jack Lin|2020 BMW M340 Xdrive|57.170|*1.000 | 57.170|2.145|21.437|
+55|12|NOV|117|Stone Shi|2021 Subaru WRX|66.844|*1.000 | 66.844|9.674|31.111|
+56|13|NOV|18|Bruce Merrick|1986 GMC Caballero|DNS|*1.000 ||||

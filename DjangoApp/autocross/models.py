@@ -5,7 +5,7 @@ from django.dispatch import receiver
 
 # Create your models here.
 class Run_data(models.Model):
-    run_id = models.IntegerField(primary_key=True)
+    run_id = models.AutoField(primary_key=True)
     class_name = models.CharField(max_length=7)
     car_num = models.IntegerField()
     driver_name = models.CharField(max_length = 36)
@@ -18,13 +18,13 @@ class Run_data(models.Model):
         return f"{self.driver_name}'s time is {self.time}"
 
 class Event(models.Model):
-    event_id = models.IntegerField(primary_key=True)
+    event_id = models.AutoField(primary_key=True)
     date = models.DateField(unique=True)
     location = models.CharField(max_length=50)
     name = models.CharField(max_length=100)
 
 class Best_run_data(models.Model):
-    b_run_id = models.IntegerField(primary_key=True)
+    b_run_id = models.AutoField(primary_key=True)
     run_id = models.ForeignKey('Run_data', on_delete=models.SET_NULL,null = True)
     raw_class_position = models.SmallIntegerField()
     pax_class_position = models.SmallIntegerField()
@@ -32,7 +32,7 @@ class Best_run_data(models.Model):
     note_id = models.ForeignKey('Run_notes', on_delete=models.SET_NULL,null = True)
 
 class Run_notes(models.Model):
-    note_id = models.IntegerField(primary_key=True)
+    note_id = models.AutoField(primary_key=True)
     tire_pressure = models.CharField(max_length=50)
     tire_wear = models.CharField(max_length=100)
     comments = models.TextField()

@@ -1,0 +1,51 @@
+Rantoul, IL
+03-27-2022
+lets get it started 
+1|1|XSTS|2|Emanuel Martin|1990 Mazda Miata| 53.867|0.000|0.000|
+2|1|EM|1|Julio Crispin|Nissan 350Z| 54.099|0.232|0.232|
+3|2|XAS|390|William Damhoff|2003 Chevrolet Corvette Z06| 54.171|0.072|0.304|
+4|1|SS|215|Dave Becker|2021 Chevrolet Corvette| 55.135|0.964|1.268|
+5|1|CAMS|66|Dean Plumadore|2017 Chevrolet Vette GS| 55.251|0.116|1.384|
+6|3|XCS|195|Andrew Salazar|2005 Honda S2000|55.258|0.007|1.391|
+7|4|XAS|70|Dan Simms|2009 Chevrolet Corvette Z06| 55.365|0.107|1.498|
+8|1|STS|12|Shreyans Mittal|Mazda 1990 Mazda Miata| 55.527|0.162|1.660|
+9|2|CAMS|166|Brian Knox|2017 Chevrolet Grand Sport| 56.935|1.408|3.068|
+10|2|SSM|142|Robert Burkholder|2000 Mazda Miata| 56.938|0.003|3.071|
+11|2|SS|71|Chris Armstrong|2012 Porsche Boxster Spyder| 57.112|0.174|3.245|
+12|1|AS|202|Jacob Goldenbaum|2010 Chevrolet Corvette Grand Sport| 57.153|0.041|3.286|
+13|2|AS|129|Mike Bealer|2021 Lotus Evora GT| 57.241|0.088|3.374|
+14|1|CS|95|Eric Wright|2005 Honda S2000| 57.325|0.084|3.458|
+15|1|BS|31|Marcus Sheldon|1997 Chevrolet Corvette| 57.591|0.266|3.724|
+16|3|SSM|214|Victor Eloy|2001 Mazda Miata| 58.248|0.657|4.381|
+17|2|STU|47|Matthew Usher|Nissan 370Z| 58.272|0.024|4.405|
+18|1|CAMC|327|Bradley Anderson|2014 Ford Mustang GT| 58.304|0.032|4.437|
+19|1|STX|346|Greg Johnson|2018 Subaru BRZ tS| 58.362|0.058|4.495|
+20|1|FS|49|Daniel Young|2020 Ford Mustang Shelby GT350| 58.385|0.023|4.518|
+21|2|BS|131|Corey Burklund|1997 Chevrolet Corvette| 58.681|0.296|4.814|
+22|1|ES|118|Aj Miramontes|1999 Mazda Miata| 59.251|0.570|5.384|
+23|1|DS|415|Mitchell Payne|2004 Infiniti g35| 59.293|0.042|5.426|
+24|3|CAMS|41|Rob Bealer|2004 Dodge Viper| 59.492|0.199|5.625|
+25|2|DS|10|Charles Coleman|2016 Ford Focus RS| 59.912|0.420|6.045|
+26|2|FS|30|Mj Lee|2013 BMW 335i| 59.916|0.004|6.049|
+27|3|SST|44|Robert Cusick|2019 BMW M2 Competition| 59.968|0.052|6.101|
+28|3|DS|21|Joy Young|2006 Mini cooper s| 60.250|0.282|6.383|
+29|3|AS|112|Curtis Perlman|2005 Lotus Elise| 60.468|0.218|6.601|
+30|2|GS|42|Shivang Patel|2021 Audi A4| 60.898|0.430|7.031|
+31|2|CS|111|Jason Zhang|2002 Honda S2000| 60.974|0.076|7.107|
+32|4|SM|571|Joshua Johnson|2011 Subaru Impreza WRX STi Hatchback| 61.837|0.863|7.970|
+33|3|ES|18|Cel Hernandez|1999 Mazda Miata| 62.417|0.580|8.550|
+34|3|FS|74|Mark Bates|BMW E60 535i| 63.388|0.971|9.521|
+35|3|BS|11|Dan Testin|1992 Chevrolet Vette| 63.400|0.012|9.533|
+36|1|NDS|16|Jaden Lee|2020 Hyundai Veloster N| 63.647|0.247|9.780|
+37|4|FS|36|Yicheng Zhou|2015 BMW 435xi| 63.965|0.318|10.098|
+38|5|FS|23|John Shew|2019 Dodge Charger scat pack| 66.024|2.059|12.157|
+39|2|NCS|710|Jeff Johnson|2022 Mazda Miata RF| 67.206|1.182|13.339|
+40|3|NCS|88|Jim Wasilewski|2006 Mazda MX-5| 70.038|2.832|16.171|
+41|4|NDS|420|James Lichtenstein|2016 Subaru WRX STI| 73.689|3.651|19.822|
+42|5|XCS|3|Xufeng Tang|2020 Mazda MX-5|DNS|||
+43|6|XAS|165|David 'FiveCar' Finchum|2006 Chevrolet Corvette Z06|DNS|||
+44|3|SS|33|Jie Wen|2016 Dodge Viper ACR Extreme Aero|DNS|||
+45|4|SS|72|Jim Ptak|2021 Porsche Spyder|DNS|||
+46|5|SS|101|Tom Kilhoffer|Nissan GTR|DNS|||
+47|2|STX|69|Jason Frank|2013 Scion FRS|DNS|||
+48|3|STX|169|Hilary Anderson Frank|2013 Scion FRS|DNS|||

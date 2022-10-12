@@ -1,0 +1,30 @@
+Rantoul, IL
+4-24-2022
+cone slayer sunday 
+1|1|XSTS|2|Emanuel Martin|1990 Mazda Miata|56.486|0.000|0.000|
+2|1|CAMS|66|Dean Plumadore|2017 Chevrolet Vette GS| 56.565|0.079|0.079|
+3|1|XSA|180|Andriy Sytyashenko|2015 Subaru WRX STI|58.115|1.550|1.629|
+4|2|XSA|80|Ryan Willen|2015 Subaru Impreza WRX STI|58.310|0.195|1.824|
+5|2|XBS|7|Tim Oyer|2010 Lotus Evora|58.488|0.178|2.002|
+6|2|CAMS|124|Jullie Miller|2019 Chevrolet Corvette| 58.731|0.243|2.245|
+7|1|STS|12|Shreyans Mittal|Mazda 1990 Mazda Miata|59.331|0.600|2.845|
+8|1|DS|343|Andrew Pelz|2021 Mini Cooper S Hardtop| 59.678|0.347|3.192|
+9|1|BS|53|SuHong Kim|2010 Lotus Evora|59.783|0.105|3.297|
+10|3|CAMS|119|Doug Miller|2019 Chevrolet Corvette| 60.006|0.223|3.520|
+11|1|ES|96|Emily Skoglund|2000 Mazda Miata| 60.932|0.926|4.446|
+12|1|FSP|27|Daniel Marx|1982 Renault Leaker|61.420|0.488|4.934|
+13|1|CAMC|327|Bradley Anderson|2014 Ford Mustang GT|61.473|0.053|4.987|
+14|2|DS|43|Shiv Patel|2022 Toyota GR86| 61.576|0.103|5.090|
+15|2|ES|92|Emilia Wright|2001 Mazda Miata| 61.584|0.008|5.098|
+16|3|DS|415|Mitchell Payne|2004 Infiniti g35| 61.599|0.015|5.113|
+17|1|STR|111|Jason Zhang|2002 Honda S2000| 61.980|0.381|5.494|
+18|1|GS|42|Shivang Patel|2021 Audi A4|62.534|0.554|6.048|
+19|3|ES|128|Jordan Polansky|1999 Mazda Miata 10AE| 64.197|1.663|7.711|
+20|1|FS|36|Yicheng Zhou|2015 BMW 435xi| 65.328|1.131|8.842|
+21|2|CAMC|160|Jedi Brown|Lincoln MKZ|65.601|0.273|9.115|
+22|4|CAMS|661|Kevin Breheny|2017 Chevrolet Corvette GS| 65.855|0.254|9.369|
+23|2|FS|74|Mark Bates|BMW E60 535i| 67.231|1.376|10.745|
+24|3|CAMC|60|Cathleen Burkholder|2006 Ford Mustang GT  2006|67.377|0.146|10.891|
+25|1|HS|20|Robert Bates|2013 Volvo C30|72.717|5.340|16.231|
+26|2|HS|82|Christopher Bates|2016 Volvo|77.559|4.842|21.073|
+27|4|CAMC|171|armand Miramontes|2012 Chevrolet camaro|DNS|||

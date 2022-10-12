@@ -15,5 +15,38 @@
     <p>You are not logged in</p>
     <a href="{% url 'login'%}?next={{request.path}}">Login</a>
     {%endif%}
+    
+    
+        {% for event,runs in all_data %}
+            <p>{{event.date}} {{event.name}} {{event.location}}</p>
+            <table border="1">
+                <tr>
+                    <th>Row #</th>
+                    <th>Class</th>
+                    <th>Car #</th>
+                    <th>Driver Name</th>
+                    <th>Class Pos</th>
+                    <th>Raw Time</th>
+                    <th>Pax Time</th>
+                    
+                </tr>           
+            {% for run in runs %}
+            <tr>
+                <td>{{forloop.counter}}</td>
+                <td>{{run.run_id.class_name}}</td>
+                <td>{{run.run_id.car_num}}</td>
+                <td>{{run.run_id.driver_name}}</td>
+                <td>{{run.raw_class_position}}</td>
+                <td>{{run.run_id.time}}</td>
+                <td>{{run.pax_time}}</td>
+                             
+            </tr>
+            {%endfor%} 
+            </table>                      
+            -------------------------------------------------------------------------
+            <br>
+        {%endfor%}
+        
+    
 </body>
 </html>

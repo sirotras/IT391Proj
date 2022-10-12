@@ -1,0 +1,83 @@
+Rantoul, IL
+04-23-2022
+cone slayer saturday 
+1|1|XSTS|6|Andrew Salazar|1990 Mazda Miata| 46.476|*0.813 | 46.476|0.000|0.000|
+2|1|SS|14|Clark Walker|2018 Porsche 718 Boxster GTS|56.853|*0.830 | 47.188|0.712|0.712|
+3|1|AS|200|Jacob Goldenbaum|2010 Chevrolet Corvette Grand Sport|57.550|*0.821 | 47.248|0.060|0.772|
+4|1|CSP|711|Nathan Arnold|2004 Honda S2000| 47.282|*0.864 | 47.282|0.034|0.806|
+5|2|XSTS|2|Emanuel Martin|1990 Mazda Miata| 47.315|*0.813 | 47.315|0.033|0.839|
+6|3|XSTS|4|Adam Deffenbaugh|1990 Mazda Miata| 47.660|*0.813 | 47.660|0.345|1.184|
+7|1|CAMS|66|Dean Plumadore|2017 Chevrolet Vette GS|57.299|*0.838 | 48.016|0.356|1.540|
+8|1|BS|153|Jerry Tang|Lotus Evora|58.711|*0.818 | 48.025|0.009|1.549|
+9|2|BS|1|Julio Crispin|2017 McLaren 570s|58.801|*0.818 | 48.099|0.074|1.623|
+10|1|CS|506|Barrett Adair|2021 Mazda Miata|59.597|*0.810 | 48.273|0.174|1.797|
+11|1|SSP|37|Tianyi Ma|2016 Porsche 911 GT3RS|56.958|*0.853 | 48.585|0.312|2.109|
+12|1|ES|69|Andriy Sytyashenko|2000 Mazda Miata|61.375|*0.792 | 48.609|0.024|2.133|
+13|2|SS|71|Chris Armstrong|2012 Porsche Boxster Spyder|58.899|*0.830 | 48.886|0.277|2.410|
+14|4|XSSP|7|Tim Oyer|2016 Porsche 911 GT3RS| 48.947|*0.853 | 48.947|0.061|2.471|
+15|1|STS|12|Shreyans Mittal|Mazda 1990 Mazda Miata|60.296|*0.813 | 49.020|0.073|2.544|
+16|1|CAMC|327|Bradley Anderson|2014 Ford Mustang GT| 49.232|*0.819 | 49.232|0.212|2.756|
+17|3|BS|53|SuHong Kim|Lotus Evora|60.502|*0.818 | 49.490|0.258|3.014|
+18|2|ES|96|Emily Skoglund|2000 Mazda Miata|62.553|*0.792 | 49.542|0.052|3.066|
+19|1|XSA|70|Michael Marshall|2021 Tesla Model 3 Performance| 50.197|*0.835 | 50.197|0.655|3.721|
+20|3|ES|40|Beau Renshaw|1992 Mazda Miata|63.409|*0.792 | 50.219|0.022|3.743|
+21|4|BS|31|Marcus Sheldon|1997 Chevrolet Corvette|61.437|*0.818 | 50.255|0.036|3.779|
+22|4|ES|92|Emilia Wright|2001 Mazda Miata|63.469|*0.792 | 50.267|0.012|3.791|
+23|2|CAMS|451|Brian Knox|2015 Chevrolet Corvette Z06|60.084|*0.838 | 50.350|0.083|3.874|
+24|2|XSA|80|Ryan Willen|2015 Subaru Impreza WRX STI| 50.351|*0.842 | 50.351|0.001|3.875|
+25|3|SS|275|Victor Eloy|Porsche Cayman Gt4|61.020|*0.830 | 50.646|0.295|4.170|
+26|1|FS|49|Daniel Young|2020 Ford Mustang Shelby GT350|62.253|*0.814 | 50.673|0.027|4.197|
+27|2|CAMC|171|armand Miramontes|2012 Chevrolet camaro| 50.709|*0.819 | 50.709|0.036|4.233|
+28|1|GS|19|Vladimir Pirozek|2012 Hyundai Genesis Coupe|63.899|*0.794 | 50.735|0.026|4.259|
+29|1|DSPL|17|Joy Young|2017 McLaren 570s| 50.755|*0.818 | 50.755|0.020|4.279|
+30|1|DS|415|Mitchell Payne|2004 Infiniti g35|62.934|*0.807 | 50.787|0.032|4.311|
+31|2|GS|42|Shivang Patel|2021 Audi A4|64.132|*0.794 | 50.920|0.133|4.444|
+32|2|DS|43|Shiv Patel|2022 Toyota GR86|63.156|*0.807 | 50.966|0.046|4.490|
+33|3|DS|1415|Jedi Brown|2004 Infinity|63.178|*0.807 | 50.984|0.018|4.508|
+34|2|FS|68|Brian Catt|2019 Ford Mustang|62.643|*0.814 | 50.991|0.007|4.515|
+35|2|AS|208|David Goldenbaum|2010 Chevrolet Corvette Grand Sport|62.342|*0.821 | 51.182|0.191|4.706|
+36|3|AS|22|Soheil Hussain|2014 Chevrolet Corvette|62.551|*0.821 | 51.354|0.172|4.878|
+37|1|FSAE|10|Nate Olson|2022 Illini Motorsports|51.941|*0.989 | 51.369|0.015|4.893|
+38|1|STH|110|Gregory Gobeli|2003 Volkswagen GTI| 51.485|*0.812 | 51.485|0.116|5.009|
+39|3|GS|94|Ethan Clements|2013 Volkswagen GTI|64.884|*0.794 | 51.517|0.032|5.041|
+40|2|STS|308|Carlos Diaz|1993 Mazda Miata|63.517|*0.813 | 51.639|0.122|5.163|
+41|3|CAMS|119|Doug Miller|2019 Corvette|61.667|*0.838 | 51.676|0.037|5.200|
+42|4|SS|777|Dan Sluis|2014 Dodge Viper|62.435|*0.830 | 51.821|0.145|5.345|
+43|1|EM|657|Kevin Wallace|TVR Vixen|57.453|*0.909 | 52.224|0.403|5.748|
+44|2|FSAE|102|Matthew Northrop|2022 Illini Motorsports|52.962|*0.989 | 52.379|0.155|5.903|
+45|4|GS|55|Robert Super|2020 Audi A5|66.102|*0.794 | 52.485|0.106|6.009|
+46|2|STH|75|Rick Uppole|2011 Mini countryman| 52.788|*0.812 | 52.788|0.303|6.312|
+47|5|BS|11|Dan Testin|1992 Chevrolet Vette|64.853|*0.818 | 53.049|0.261|6.573|
+48|3|XSA|25|Connor Whittington|1994 Mazda Miata| 53.264|*0.851 | 53.264|0.215|6.788|
+49|3|FS|340|Nick Brandt|2018 BMW 340i xdrive|65.563|*0.814 | 53.368|0.104|6.892|
+50|4|DS|45|Aklavya Patel|2022 Toyota GR86|66.582|*0.807 | 53.731|0.363|7.255|
+51|3|STS|100|Jarrett Anderson|2008 Scion tC|66.271|*0.813 | 53.878|0.147|7.402|
+52|4|FS|36|Yicheng Zhou|2015 BMW 435xi|66.244|*0.814 | 53.922|0.044|7.446|
+53|2|CS|177|Colin Lualdi|2017 Mazda MX-5 Miata RF|67.217|*0.810 | 54.445|0.523|7.969|
+54|2|CSP|67|Daniel Johnson|2000 Mazda Miata| 54.535|*0.844 | 54.535|0.090|8.059|
+55|3|CAMC|62|Jake Phillips|2015 Chevrolet SS Sedan| 54.747|*0.819 | 54.747|0.212|8.271|
+56|4|CAMS|124|Julie Miller|2019 Corvette|65.532|*0.838 | 54.915|0.168|8.439|
+57|4|CAMC|148|Dan Cothern|1994 Pontiac Trans Am| 55.076|*0.816 | 55.076|0.161|8.600|
+58|3|STH|117|Carson Alwardt|2016 Ford Mustang Ecoboost| 55.104|*0.829 | 55.104|0.028|8.628|
+59|3|CSP|150|Tyler Auth|1997 Mazda MX-5 Miata| 55.514|*0.864 | 55.514|0.410|9.038|
+60|5|CAMC|60|Cathleen Burkholder|2006 Ford Mustang GT  2006| 55.994|*0.819 | 55.994|0.480|9.518|
+61|2|DSPL|167|Leah Johnson|2000 Mazda Miata| 57.439|*0.844 | 57.439|1.445|10.963|
+62|5|CAMS|166|Deb Plumadore|2017 Chevrolet Vette GS|72.483|*0.838 | 60.740|3.301|14.264|
+63|1|AM|918|William Holmes|2020 Ford Shelby GT500 Mustang|62.099|*1.000 | 62.099|1.359|15.623|
+64|4|CSP|158|Emilie Alwardt|1997 Mazda MX-5 Miata| 62.830|*0.864 | 62.830|0.731|16.354|
+65|2|AM|794|Tucker VanVoorhis|2006 Porsche Cayman|64.494|*1.000 | 64.494|1.664|18.018|
+66|3|AM|15|Tyler Matuszczak|2001 Honda S2000|64.778|*1.000 | 64.778|0.284|18.302|
+67|4|AM|28|Michael Zhou|2007 Porsche CaymanS|68.057|*1.000 | 68.057|3.279|21.581|
+68|5|AM|89|Keith Vogl|2019 Subaru STI|68.335|*1.000 | 68.335|0.278|21.859|
+69|6|AM|888|Oscar Wan|2005 BMW 325xi|72.205|*1.000 | 72.205|3.870|25.729|
+70|7|AM|605|Vinay Prithyani|2021 Mazda Miata|72.484|*1.000 | 72.484|0.279|26.008|
+71|8|AM|115|Jawad Haq|1996 Subaru SVX|75.651|*1.000 | 75.651|3.167|29.175|
+72|9|AM|88|Jim Wasilewski|2006 Mazda MX-5|76.950|*1.000 | 76.950|1.299|30.474|
+73|10|AM|32|Nicolas Nytko|2016 Volkswagen Passat|78.697|*1.000 | 78.697|1.747|32.221|
+74|11|AM|911|John Lin|1988 Porsche 911 Safari|78.818|*1.000 | 78.818|0.121|32.342|
+75|12|AM|23|Timur Javid|2016 Volkswagen Passat|81.667|*1.000 | 81.667|2.849|35.191|
+76|13|AM|57|Amaan Sheikh|Mazda Miata|83.280|*1.000 | 83.280|1.613|36.804|
+77|5|SS|101|Tom Kilhoffer|Nissan GTR|DNS|*0.830 ||||
+78|6|SS|215|Dave Becker|2021 Chevrolet Corvette|DNS|*0.830 ||||
+79|4|AS|64|Jim Landes|2013 Chevrolet Corvette|DNS|*0.821 ||||
+80|3|CS|666|Julio Serra|2011 Mazda Miata|DNS|*0.810 ||||

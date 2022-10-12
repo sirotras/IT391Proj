@@ -1,0 +1,62 @@
+Rantoul, IL
+10-9-2022
+closing the gap 
+1|1|XES|529|Mark Groseth|1996 Mazda Miata R| 42.314|*0.792 | 42.314|0.000|0.000|
+2|1|SS|14|Clark Walker|2018 Porsche 718 Boxster GTS| 52.126|*0.830 | 43.264|0.950|0.950|
+3|1|CAMC|39|Dave Whitworth|2012 Ford Mustang| 52.872|*0.819 | 43.302|0.038|0.988|
+4|1|SST|183|William Damhoff|2006 Honda S2000| 51.875|*0.841 | 43.626|0.324|1.312|
+5|2|XSTR|2|Emanuel Martin|1990 Mazda Miata| 43.669|*0.828 | 43.669|0.043|1.355|
+6|3|XSTR|26|Xufeng Tang|2020 Mazda MX-5| 43.672|*0.828 | 43.672|0.003|1.358|
+7|4|XSSC|6|Andrew Salazar|2016 Scion FR-S| 43.677|*0.809 | 43.677|0.005|1.363|
+8|5|XSSC|95|Aldo Flores|2016 Scion FR-S| 44.320|*0.809 | 44.320|0.643|2.006|
+9|2|SST|83|Paul Kolatorowicz|2006 Honda S2000| 52.866|*0.841 | 44.460|0.140|2.146|
+10|2|SS|215|Dave Becker|2021 Chevrolet Corvette| 53.749|*0.830 | 44.611|0.151|2.297|
+11|6|XFSP|7|Tim Oyer|2002 Ford Zx2| 44.626|*0.824 | 44.626|0.015|2.312|
+12|1|CAMS|66|Dean Plumadore|2017 Chevrolet Vette GS| 53.443|*0.838 | 44.785|0.159|2.471|
+13|7|XFSP|72|Andriy Sytyashenko|2002 Ford Zx2| 44.875|*0.824 | 44.875|0.090|2.561|
+14|1|AS|200|Jacob Goldenbaum|2010 Chevrolet Corvette Grand Sport| 54.847|*0.821 | 45.029|0.154|2.715|
+15|3|SS|198|Dustin Neuville|2018 Chevrolet Corvette Z06| 54.267|*0.830 | 45.041|0.012|2.727|
+16|1|BS|187|SuHong Kim|2020 BMW M2| 55.066|*0.818 | 45.044|0.003|2.730|
+17|2|CAMC|5|Robert Burkholder|Ford 2006 mustang gt| 55.242|*0.819 | 45.243|0.199|2.929|
+18|1|FS|68|Brian Catt|2021 Ford Mustang| 56.129|*0.814 | 45.689|0.446|3.375|
+19|2|CAMS|661|Brian Knox|Chevrolet corvette| 54.532|*0.838 | 45.697|0.008|3.383|
+20|1|DS|186|Shiv Patel|2022 Toyota GR86| 57.200|*0.807 | 46.160|0.463|3.846|
+21|2|BS|414|Rossen Jeliazkov|2018 Audi RS3| 56.477|*0.818 | 46.198|0.038|3.884|
+22|2|FS|49|Daniel Young|2020 Ford Mustang Shelby GT350| 56.812|*0.814 | 46.245|0.047|3.931|
+23|2|AS|208|David Goldenbaum|2010 Chevrolet Corvette Grand Sport| 56.465|*0.821 | 46.357|0.112|4.043|
+24|2|DS|86|Shivang Patel|2023 Toyota GR86| 57.610|*0.807 | 46.491|0.134|4.177|
+25|3|DS|34|Gary Patrick|2013 Subaru BRZ| 57.897|*0.807 | 46.722|0.231|4.408|
+26|1|ES|169|Emily Skoglund|2000 Mazda Miata| 59.032|*0.792 | 46.753|0.031|4.439|
+27|1|STR|346|Greg Johnson|2018 Subaru BRZ tS| 47.065|*0.817 | 47.065|0.312|4.751|
+28|4|DS|415|Mitchell Payne|2004 Infiniti g35| 58.430|*0.807 | 47.153|0.088|4.839|
+29|1|GS|12|Hugo Ji|2019 Hyundai Veloster Turbo| 47.289|*0.794 | 47.289|0.136|4.975|
+30|2|ES|94|doug jacobson|1999 Mazda miata| 60.392|*0.792 | 47.830|0.541|5.516|
+31|3|BS|17|Mitchell Graybeal|2009 Porsche Cayman| 58.983|*0.818 | 48.248|0.418|5.934|
+32|1|CS|718|Joshua Johnson|2022 Mazda MX-5 Miata| 59.808|*0.810 | 48.444|0.196|6.130|
+33|2|CS|211|Yuanhan Sun|2004 Honda S2000|60.407|*0.810 | 48.929|0.485|6.615|
+34|2|GS|127|Daniel Marx|2004 Mini Cooper| 49.040|*0.786 | 49.040|0.111|6.726|
+35|3|FS|11|Kevin Zhou|2020 Chevrolet Camaro| 60.335|*0.814 | 49.112|0.072|6.798|
+36|3|ES|808|Adrian Astorina|1991 Mazda Miata| 62.080|*0.792 | 49.167|0.055|6.853|
+37|3|CS|710|Jeff Johnson|2022 Mazda Mx-5 RF| 62.186|*0.810 | 50.370|1.203|8.056|
+38|3|CAMC|8|Jedi Brown|Lincoln MKZ| 61.592|*0.819 | 50.443|0.073|8.129|
+39|2|STR|21|Dan Testin|1999 Mazda Miata| 50.978|*0.828 | 50.978|0.535|8.664|
+40|4|CS|4|Matt Devine|Porsche Boxster S| 63.320|*0.810 | 51.289|0.311|8.975|
+41|4|ES|111|armando Miramontes|1999 Mazda miata|64.783|*0.792 | 51.308|0.019|8.994|
+42|4|CAMC|84|Tom McKenna|Pontiac GTO| 68.627|*0.819 | 56.205|4.897|13.891|
+43|1|NOV|28|Michael Zhou|2017 Alfa Romeo Guilia QV| 58.910|*1.000 | 58.910|2.705|16.596|
+44|2|NOV|37|Eric Tang|2013 Mercedes-Benz C63 Amg| 59.071|*1.000 | 59.071|0.161|16.757|
+45|3|NOV|87|Henry Xu|2018 BMW M2| 60.717|*1.000 | 60.717|1.646|18.403|
+46|4|NOV|711|Andrew Dou|2020 Chevrolet Camaro| 61.427|*1.000 | 61.427|0.710|19.113|
+47|5|NOV|134|Sean Patrick|2013 Subaru BRZ| 61.902|*1.000 | 61.902|0.475|19.588|
+48|6|NOV|99|Itamar Kaplansky|2015 Ford Fusion|65.152|*1.000 | 65.152|3.250|22.838|
+49|7|NOV|19|Arpan Raja|2008 Audi S6| 66.242|*1.000 | 66.242|1.090|23.928|
+50|8|NOV|666|Yuxuan Jiang|2017 Audi A4| 67.004|*1.000 | 67.004|0.762|24.690|
+51|9|NOV|119|Ryan Day|2008 Audi S6| 67.243|*1.000 | 67.243|0.239|24.929|
+52|10|NOV|110|Yibo Wang|2004 Honda S2000| 72.964|*1.000 | 72.964|5.721|30.650|
+53|11|NOV|880|Miles Astorina|1991 Mazda Miata| 73.010|*1.000 | 73.010|0.046|30.696|
+54|12|NOV|38|Siyuan Wang|2019 Honda Civic Sports| 73.507|*1.000 | 73.507|0.497|31.193|
+55|5|CAMC|60|Cathleen Burkholder|2006 Ford Mustang GT  2006|DNS|*0.819 ||||
+56|13|NOV|63|Daniel Kaplansky|2013 Chevrolet Impala|DNF|*1.000 |  0.000|||
+57|14|NOV|128|Bill Yang|2017 Alfa Romeo Giulia QV|DNS|*1.000 ||||
+58|15|NOV|370|Jackson Downey|2004 Pontiac Gto|DNS|*1.000 ||||
+59|16|NOV|999|Yintao Zhou|2018 Alfa Romeo|DNS|*1.000 ||||

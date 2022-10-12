@@ -1,0 +1,60 @@
+Rantoul, IL
+03-26-2022
+lets get it started 
+1|1|XSTS|2|Emanuel Martin|1990 Mazda Miata|46.783|0.000|0.000|
+2|1|SSP|37|Tianyi Ma|2016 Porsche 911 GT3RS|46.964|0.181|0.181|
+3|2|XCS|124|Andrew Salazar|2020 Mazda Miata|47.167|0.203|0.384|
+4|3|XCS|24|Xufeng Tang|2020 Mazda MX-5|47.443|0.276|0.660|
+5|1|SS|1|Julio Crispin|2017 McLaren 570s|47.663|0.220|0.880|
+6|5|XAS|390|William Damhoff|2003 Chevrolet Corvette Z06|48.995|1.332|2.212|
+7|1|STS|12|Shreyans Mittal|Mazda 1990 Mazda Miata|49.012|0.017|2.229|
+8|1|CAMS|66|Dean Plumadore|2017 Chevrolet Vette GS|49.035|0.023|2.252|
+9|1|SSL|21|Joy Young|2017 McLaren|49.674|0.639|2.891|
+10|4|XES|82|Tim Oyer|2001 Mazda Miata|49.799|0.125|3.016|
+11|2|SS|33|Jie Wen|2019 Dodge Viper ACR|50.158|0.359|3.375|
+12|3|SS|71|Chris Armstrong|2012 Porsche Boxster Spyder|50.240|0.082|3.457|
+13|2|CAMS|166|Brian Knox|2017 Chevrolet Grand Sport|50.292|0.052|3.509|
+14|2|EM|171|Aj Miramontes|1999 Mazda Miata|50.377|0.085|3.594|
+15|1|AS|202|Jacob Goldenbaum|2010 Chevrolet Corvette Grand Sport|50.805|0.428|4.022|
+16|1|CAMC|327|Bradley Anderson|2014 Ford Mustang GT|50.851|0.046|4.068|
+17|1|CS|195|Andriy Sytyashenko|2005 Honda S2000|51.069|0.218|4.286|
+18|2|AS|27|Mike Bealer|2021 Lotus Evora GT|51.103|0.034|4.320|
+19|2|CS|95|Eric Wright|2005 Honda S2000|51.119|0.016|4.336|
+20|1|DS|415|Mitchell Payne|2004 Infiniti g35|51.592|0.473|4.809|
+21|4|SS|14|Clark Walker|2018 Porsche 718 Boxster GTS|51.701|0.109|4.918|
+22|1|ES|96|Emily Skoglund|2000 Mazda Miata|51.805|0.104|5.022|
+23|1|STU|47|Matthew Usher|Nissan 370Z|52.374|0.569|5.591|
+24|1|FS|35|SuHong Kim|2017 BMW 435i X-drive|52.478|0.104|5.695|
+25|1|GS|19|Vladimir Pirozek|2012 Hyundai Genesis Coupe|52.613|0.135|5.830|
+26|3|SM|571|Joshua Johnson|2011 Subaru Impreza WRX STi Hatchback|53.128|0.515|6.345|
+27|2|STX|346|Greg Johnson|2018 Subaru BRZ tS|53.259|0.131|6.476|
+28|2|ES|8|Ziang Xiao|1994 Mazda Miata|53.381|0.122|6.598|
+29|3|CAMS|848|Steven Peterson|2007 Pontiac Solstice|53.420|0.039|6.637|
+30|2|FS|49|Daniel Young|2020 Ford Mustang Shelby GT350|53.542|0.122|6.759|
+31|3|AS|22|Soheil Hussain|2014 Chevrolet Corvette|53.688|0.146|6.905|
+32|2|GS|94|Ethan Clements|2013 Volkswagen GTI|53.759|0.071|6.976|
+33|4|CAMS|13|Tyler Blunier|2002 Chevrolet Z06 corvette|53.824|0.065|7.041|
+34|4|AS|112|Curtis Perlman|2005 Lotus Elise|54.024|0.200|7.241|
+35|5|CAMS|48|Daniel Johnson|2007 Pontiac Solstice|54.212|0.188|7.429|
+36|2|DS|10|Charles Coleman|2016 Ford Focus RS|54.694|0.482|7.911|
+37|3|FS|36|Yicheng Zhou|2015 BMW 435xi|54.950|0.256|8.167|
+38|1|STH|110|Gregory Gobeli|2003 Volkswagen GTI|55.247|0.297|8.464|
+39|6|CAMS|41|Rob Bealer|2004 Dodge Viper|55.352|0.105|8.569|
+40|2|STS|308|Carlos Diaz|1993 Mazda Miata|55.450|0.098|8.667|
+41|2|STH|75|Rick Uppole|2011 Mini countryman|56.001|0.551|9.218|
+42|1|BS|11|Dan Testin|1992 Chevrolet Vette|56.247|0.246|9.464|
+43|4|FS|340|Nick Brandt|2018 BMW 340i xdrive|56.770|0.523|9.987|
+44|5|SS|77|Dan Sluis|2014 Dodge|56.822|0.052|10.039|
+45|3|ES|18|Cel Hernandez|1999 Mazda Miata|58.050|1.228|11.267|
+46|3|STS|211|Cathy Burkholder|1990 Mazda Miata|58.128|0.078|11.345|
+47|1|NCS|15|Tyler Matuszczak|2001 Honda S2000|58.409|0.281|11.626|
+48|2|CAMC|62|Jake Phillips|2015 Chevrolet SS Sedan|59.063|0.654|12.280|
+49|2|BS|99|Tom Holmes|1999 Chevrolet Corvette FRC|61.159|2.096|14.376|
+50|2|NHS|710|Jeff Johnson|2010 Chevrolet Cobalt|61.928|0.769|15.145|
+51|3|NCS|88|Jim Wasilewski|2006 Mazda MX-5|64.754|2.826|17.971|
+52|6|SS|25|Arjun Satwani|2019 Porsche 911 GT3 RS|DNS|||
+53|7|SS|101|Tom Kilhoffer|Nissan GTR|DNS|||
+54|3|STX|69|Jason Frank|2013 Scion FRS|DNS|||
+55|4|STX|169|Hilary Anderson Frank|2013 Scion FRS|DNS|||
+56|4|SSP|214|Victor Eloy|2001 Mazda Miata|DNS|||
+57|6|XAS|165|David 'FiveCar' Finchum|2006 Chevrolet Corvette Z06|DNS|||
