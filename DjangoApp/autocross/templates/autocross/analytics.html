@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+<body onload="sessionStyleScript();">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./dashboard.html">Know Your A-PAX</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" id="navHome" href="./dashboard.html">Home</a>
+        </li>
+	      <li class="nav-item">
+          <a class="nav-link" class="debug" id="navLogin" href="./login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" class="debug" id="navProfile" href="./profile.html">Profile</a>
+        </li>
+	      <li class="nav-item">
+          <a class="nav-link" id="navAnalytics" href="./analytics.html">Analytics</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div>
+  <h2>Performance</h2>
+  <ul>
+    <li>
+      <label>Best Performance:</label>
+      <!-- python transfer data-->
+    </li>
+    <li>
+      <label>Average Delta-Time (seconds behind first-place):</label>
+      <!-- python transfer data-->
+    </li>
+    <li>
+      <!-- python transfer data-->
+    </li>
+
+  </ul>
+</div>
+<div>
+  <h2>Cones</h2>
+  <ul>
+    <li>
+      <label>Lifetime Cones Hit:</label>
+      <!-- ptd-->
+    </li>
+    <li>
+      <select name="coneTimeframe" id="coneTimeSelect">
+        <option value="year">Previous Year</option>
+        <option value="six-month">Previous Six Months</option>
+        <option value="three-month">Previous Three Months</option>
+        <option value="one-month">Previous Month</option>
+      </select>
+      <!--ptd-->
+    </li>
+    <li>
+      <label>Average Cones Hit Per Event:</label>
+      <!--ptd-->
+    </li>
+  </ul>
+</div>
+
+
+</body>
+</html>

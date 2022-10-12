@@ -27,3 +27,12 @@ class SignUpView(CreateView):
     form_class = UserCreationForm
     success_url = reverse_lazy('login')
     template_name = 'autocross/signup.html'
+
+def analytics(request):
+    return render(request,'autocross/analytics.html')
+
+def dashboard(request):
+    return render(request,'autocross/dashboard.html')
+
+def leaderboard(request):
+    return render(request,'autocross/leaderboard.html')
