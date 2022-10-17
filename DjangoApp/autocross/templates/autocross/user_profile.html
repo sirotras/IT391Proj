@@ -9,5 +9,24 @@
     <h1>This could be a user's profile</h1>
     <h1>Logged in users only!</h1>
     
+    <table border="1">
+        <th>Name</th>
+        <th>Time</th>
+        <th>Position</th>
+        <th>Date</th>
+        {% for run in run_list %}
+        <tr>
+            <td>{{run.run_id.driver_name}}</td>
+            <td>{{run.run_id.time}}</td>
+            <td>{{run.raw_class_position}}</td>
+            <td>{{run.run_id.event_id.date}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p>SuggList: {{sugg_list}}</p>
+    <form action="#" method="get">        
+        <input type="submit" class="btn" value="Update Suggestions" name="suggbtn">
+    </form>
+       
 </body>
 </html>

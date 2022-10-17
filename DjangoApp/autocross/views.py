@@ -1,10 +1,13 @@
 from datetime import date
+import re
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from django.views.generic import CreateView
 from django.urls import reverse_lazy
-from .models import Event, Best_run_data, Run_data
+from .models import Event, Best_run_data, Run_data, Profile, Run_notes
+from django.contrib.auth.models import User
+from fuzzywuzzy import fuzz
 
 
 # Create your views here.
@@ -21,7 +24,22 @@ def home(request):
 
 @login_required
 def user_profile(request):
-    return render(request, 'autocross/user_profile.html')
+    current_user = request.user
+    print(current_user.id)
+    current_profile = request.user.profile
+    print(current_profile.id)
+    
+    if(request.GET.get('suggbtn')):
+        current_profile.get_suggestions()
+
+    sugg_list = current_profile.suggestion_list.split('|')
+    sugg_list.pop()
+    run_list = []
+    for brun_id in sugg_list:
+        run = Best_run_data.objects.get(b_run_id=int(brun_id))
+        run_list.append(run)
+    context = {'run_list':run_list,'sugg_list':sugg_list}
+    return render(request, 'autocross/user_profile.html', context=context)
 
 class SignUpView(CreateView):
     form_class = UserCreationForm

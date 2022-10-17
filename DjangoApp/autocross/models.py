@@ -2,6 +2,8 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+from fuzzywuzzy import fuzz
+
 
 # Create your models here.
 class Run_data(models.Model):
@@ -48,6 +50,32 @@ class Profile(models.Model):
     suggestion_list = models.TextField(blank=True)
     total_cone_count = models.IntegerField(null = True)
     run_list = models.TextField(blank=True)
+
+    
+    def get_suggestions(self):
+        print("hello")
+        name = self.user.get_full_name()
+
+        if self.suggestion_list == '':
+            print("noData")
+            all_runs = Best_run_data.objects.all()
+            for run in all_runs:
+                ratio = fuzz.ratio(name, run.run_id.driver_name)
+                if ratio > 90:
+                    self.suggestion_list+= str(run.b_run_id)+'|'
+            self.save()
+        else:
+            print("SomeData")
+            suggest_string_list = self.suggestion_list.split('|')
+            suggest_string_list.pop()
+            all_runs = Best_run_data.objects.all()
+            for run in all_runs:
+                if str(run.b_run_id) not in suggest_string_list:
+                    ratio = fuzz.ratio(name, run.run_id.driver_name)
+                    if ratio > 90:
+                        self.suggestion_list+= str(run.b_run_id)+'|'
+            self.save()
+            
 
 @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):
