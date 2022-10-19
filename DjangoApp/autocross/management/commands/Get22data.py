@@ -131,10 +131,15 @@ def main():
                     #Create Best Run Data instance and                    
                     raw_class_position = raw_data_list[index][1]
                     pax_class_position = pax_data_list[pindex][1]
-                    pax_time = pax_data_list[pindex][8]                    
+                    pax_time = pax_data_list[pindex][8]
+                    raw_diff_succesor = raw_data_list[index][7]
+                    raw_diff_first = raw_data_list[index][8]
+                    pax_diff_succesor = pax_data_list[pindex][9]
+                    pax_diff_first = pax_data_list[pindex][10]               
 
                     best_run_data_instance = Best_run_data(run_id=run_data_instance, raw_class_position= int(raw_class_position), pax_class_position=int(pax_class_position),
-                                                            pax_time=pax_time)                    
+                                                            pax_time=pax_time, raw_diff_succesor = raw_diff_succesor, raw_diff_first = raw_diff_first,
+                                                            pax_diff_succesor = pax_diff_succesor, pax_diff_first = pax_diff_first)                    
                     best_run_data_instance.save()
                     pindex= len(pax_data_list)+1
                 else:

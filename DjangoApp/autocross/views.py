@@ -37,8 +37,8 @@ def user_profile(request):
     run_list = []
     for brun_id in sugg_list:
         run = Best_run_data.objects.get(b_run_id=int(brun_id))
-        run_list.append(run)
-    context = {'run_list':run_list,'sugg_list':sugg_list}
+        run_list.append(run)    
+    context = {'run_list':run_list,'sugg_list':sugg_list}    
     return render(request, 'autocross/user_profile.html', context=context)
 
 class SignUpView(CreateView):

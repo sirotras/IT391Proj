@@ -32,6 +32,10 @@ class Best_run_data(models.Model):
     pax_class_position = models.SmallIntegerField()
     pax_time = models.CharField(max_length=7)
     note_id = models.ForeignKey('Run_notes', on_delete=models.SET_NULL,null = True)
+    raw_diff_succesor = models.CharField(max_length=7)
+    raw_diff_first = models.CharField(max_length=7)
+    pax_diff_succesor = models.CharField(max_length=7)
+    pax_diff_first = models.CharField(max_length=7)
 
 class Run_notes(models.Model):
     note_id = models.AutoField(primary_key=True)
@@ -50,6 +54,7 @@ class Profile(models.Model):
     suggestion_list = models.TextField(blank=True)
     total_cone_count = models.IntegerField(null = True)
     run_list = models.TextField(blank=True)
+    events_checked_list = models.TextField(blank=True)
 
     
     def get_suggestions(self):
