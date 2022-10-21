@@ -8,6 +8,7 @@ from django.urls import reverse_lazy
 from .models import Event, Best_run_data, Run_data, Profile, Run_notes
 from django.contrib.auth.models import User
 from fuzzywuzzy import fuzz
+from .forms import SignUpForm
 
 
 # Create your views here.
@@ -42,7 +43,7 @@ def user_profile(request):
     return render(request, 'autocross/user_profile.html', context=context)
 
 class SignUpView(CreateView):
-    form_class = UserCreationForm
+    form_class = SignUpForm
     success_url = reverse_lazy('login')
     template_name = 'autocross/signup.html'
 
