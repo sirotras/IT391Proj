@@ -48,9 +48,10 @@ class SignUpView(CreateView):
     success_url = reverse_lazy('login')
     template_name = 'autocross/signup.html'
 
+@login_required
 def analytics(request):
     return render(request,'autocross/analytics.html')
-
+@login_required
 def dashboard(request):
     return render(request,'autocross/dashboard.html')
 
