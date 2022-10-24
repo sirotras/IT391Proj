@@ -9,6 +9,7 @@ from .models import Event, Best_run_data, Run_data, Profile, Run_notes
 from django.contrib.auth.models import User
 from fuzzywuzzy import fuzz
 from .forms import SignUpForm
+from json import dumps
 
 
 # Create your views here.
@@ -57,11 +58,14 @@ def analytics(request):
     sugg_list = current_profile.suggestion_list.split('|')
     sugg_list.pop()
     run_list = []
+    coordinates = ["Run Date" , "Difference From First (Raw)"]
     #gets the best run data for each best run id
     for brun_id in sugg_list:
         run = Best_run_data.objects.get(b_run_id=int(brun_id))
-        run_list.append(run)
-    context = {'run_list':run_list,'sugg_list':sugg_list}
+        coordinates.append(str(run.run_id.event_id.date))
+        coordinates.append(str(run.raw_diff_first))
+    dataJSON = dumps(coordinates)
+    context = {'run_list':run_list,'sugg_list':sugg_list, 'data':dataJSON}
     return render(request,'autocross/analytics.html', context=context)
 
 @login_required
