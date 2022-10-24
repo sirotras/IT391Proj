@@ -17,7 +17,7 @@
     {%endif%}
     
     
-        {% for event,runs in all_data %}
+        {% for event,runs, pax_runs in all_data %}
             <p>{{event.date}} {{event.name}} {{event.location}}</p>
             <table border="1">
                 <tr>
@@ -42,7 +42,37 @@
                              
             </tr>
             {%endfor%} 
-            </table>                      
+            </table> 
+            <p>
+                <table border="1">
+                    <tr>
+                        <th>Row #</th>
+                        <th>Class</th>
+                        <th>Car #</th>
+                        <th>Driver Name</th>
+                        <th>Class Pos</th>                        
+                        <th>Pax Time</th>
+                        <th>Successor Diff</th>
+                        <th>First Diff</th>
+                        
+                    </tr>           
+                {% for prun in pax_runs %}
+                
+                <tr>
+                    <td>{{forloop.counter}}</td>
+                    <td>{{prun.run_id.class_name}}</td>
+                    <td>{{prun.run_id.car_num}}</td>
+                    <td>{{prun.run_id.driver_name}}</td>
+                    <td>{{prun.pax_class_position}}</td>                    
+                    <td>{{prun.pax_time}}</td>
+                    <td>{{prun.pax_diff_succesor}}</td>
+                    <td>{{prun.pax_diff_first}}</td>
+                                 
+                </tr>
+                
+                {%endfor%} 
+                </table>
+            </p>                     
             -------------------------------------------------------------------------
             <br>
         {%endfor%}

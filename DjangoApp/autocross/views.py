@@ -17,8 +17,9 @@ def home(request):
     num_events=4
     all_data = []
     for event in all_events[:num_events]:
-        runs = Best_run_data.objects.select_related('run_id__event_id').filter(run_id__event_id__event_id=event.event_id)        
-        all_data.append((event,runs)) 
+        runs = Best_run_data.objects.select_related('run_id__event_id').filter(run_id__event_id__event_id=event.event_id)
+        pax_runs = Best_run_data.objects.select_related('run_id__event_id').filter(run_id__event_id__event_id=event.event_id).order_by('pax_diff_first')       
+        all_data.append((event,runs,pax_runs)) 
     
     context = {'all_data':all_data}        
     return render(request, 'autocross/home.html', context = context)
