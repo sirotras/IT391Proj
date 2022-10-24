@@ -50,7 +50,20 @@ class SignUpView(CreateView):
 
 @login_required
 def analytics(request):
-    return render(request,'autocross/analytics.html')
+    #get profile of the current logged in user
+    current_profile = request.user.profile
+    #Gets suggestion list without the pipe as a list
+    #holds the best run id
+    sugg_list = current_profile.suggestion_list.split('|')
+    sugg_list.pop()
+    run_list = []
+    #gets the best run data for each best run id
+    for brun_id in sugg_list:
+        run = Best_run_data.objects.get(b_run_id=int(brun_id))
+        run_list.append(run)
+    context = {'run_list':run_list,'sugg_list':sugg_list}
+    return render(request,'autocross/analytics.html', context=context)
+
 @login_required
 def dashboard(request):
     return render(request,'autocross/dashboard.html')
