@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./dashboard.html"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+          <!--Home Button-->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" id="navHome" href="{% url 'autocross:home' %}">Home</a>
+          </li>
+
+          <!--Signup button-->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" id="navHome" href="{% url 'autocross:signup' %}">Sign Up</a>
+          </li>
+         <!--Login Button-->
+         {% if user.is_authenticated %}
+         <li class="nav-item">
+            <a class="nav-link" class="debug" id="navLogin" href="{% url 'logout'%}">Log Out</a>
+          </li>
+         {% else %}
+         <li class="nav-item">
+            <a class="nav-link" class="debug" id="navLogin" href="{% url 'login'%}">Login</a>
+          </li>
+        {% endif %}
+
+        {% if user.is_authenticated %}
+         <!--Profile Button-->
+          <li class="nav-item">
+            <a class="nav-link" class="debug" id="navProfile" href="{% url 'autocross:user_profile' %}">Profile</a>
+          </li>
+            
+          <!--Analystics Button-->
+          <li class="nav-item">
+            <a class="nav-link" id="navAnalytics" href="{% url 'autocross:analytics' %}">Analytics</a>
+          </li>
+        {% endif %}        
+      </ul>
+  <span>
+      {% if user.is_authenticated %}
+        
+        <h0>Welcome: {{user.get_username}}</h0>
+        <a href="{% url 'logout'%}?next={{request.path}}">Logout</a>
+  
+        {%else%}
+          <h0><right>You are not logged in</right></h0>
+          <a href="{% url 'login'%}?next={{request.path}}">Login</a>
+      
+      {%endif%}
+  </span>
+      </div>
+  </div>
+</nav>
+{% block below %}
+{% endblock %}
