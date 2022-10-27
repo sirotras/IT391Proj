@@ -68,8 +68,9 @@ def analytics(request):
     run_list.sort(key=lambda x: x.run_id.event_id.date, reverse=True)
     #adding data to coordinates
     for run in run_list:
-        coordinates.append(str(run.run_id.event_id.date))
-        coordinates.append(str(run.raw_diff_first))
+        if run.raw_diff_first != "":
+            coordinates.append(str(run.run_id.event_id.date))
+            coordinates.append(str(run.raw_diff_first))
     dataJSON = dumps(coordinates)
     context = {'run_list':run_list,'sugg_list':sugg_list, 'data':dataJSON}
     return render(request,'autocross/analytics.html', context=context)
