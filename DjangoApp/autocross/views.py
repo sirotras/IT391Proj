@@ -62,6 +62,12 @@ def analytics(request):
     #gets the best run data for each best run id
     for brun_id in sugg_list:
         run = Best_run_data.objects.get(b_run_id=int(brun_id))
+        run_list.append(run)
+        
+    #sorting run list most recent event first
+    run_list.sort(key=lambda x: x.run_id.event_id.date, reverse=True)
+    #adding data to coordinates
+    for run in run_list:
         coordinates.append(str(run.run_id.event_id.date))
         coordinates.append(str(run.raw_diff_first))
     dataJSON = dumps(coordinates)
