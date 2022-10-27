@@ -15,10 +15,10 @@
     <!--NavBar-->
     {% extends "base.html" %}
     {% block below %}
-    <h1>This could be a user's profile</h1>
-    <h1>Logged in users only!</h1>
-    
-    <table border="1">
+     
+    <h1 class="text-center">Account Profile</h1>
+    <h3>Your Runs</h3>
+    <table class="table table-dark">
         <th>Name</th>
         <th>Time</th>
         <th>Position</th>
@@ -34,7 +34,7 @@
     </table>
     <p>SuggList: {{sugg_list}}</p>
     <form action="#" method="get">        
-        <input type="submit" class="btn" value="Update Suggestions" name="suggbtn">
+        <input type="submit" type="button" class="btn btn-primary" value="Update Suggestions" name="suggbtn">
     </form>
     {% block navbar%}
     {% endblock %}
