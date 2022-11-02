@@ -78,7 +78,7 @@ def analytics(request):
     
     dataJSON2 = dumps(coordinates2)
     
-    context = {'run_list':run_list,'sugg_list':sugg_list, 'data1':dataJSON1, 'data2':dataJSON2}
+    context = {'run_list':run_list,'sugg_list':sugg_list, 'data1':dataJSON1, 'data2':dataJSON2 , 'cones':current_profile.total_cone_count}
     return render(request,'autocross/analytics.html', context=context)
 
 @login_required
