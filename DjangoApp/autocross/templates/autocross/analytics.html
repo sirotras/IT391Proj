@@ -16,10 +16,29 @@
     <!--NavBar-->
     {% extends "base.html" %}
 	{% block below %}
-<canvas id="testCanvas"></canvas> 
+<canvas id="canvas1"></canvas> 
+<canvas id="canvas2"></canvas> 
 <script>
+	function maxInt(arr) {
+		var max = parseInt(arr[3]);
+		for(let i = 5;i<arr.length;i+=2)
+			if(!(isNaN(parseInt(arr[i])))&&parseInt(arr[i])>max)
+				max=parseInt(arr[i]);
+		return max;	
+	}
+	
+	function minInt(arr) {
+		var min = parseInt(arr[3]);
+		for(let i = 5;i<arr.length;i+=2)
+			if(!(isNaN(parseInt(arr[i])))&&parseInt(arr[i])<min)
+				min=parseInt(arr[i]);
+		return min;	
+	}
+	
 	function max(arr) {
 		var max = parseFloat(arr[3]);
+		if isNaN(max)
+			return maxInt(arr);
 		for(let i = 5;i<arr.length;i+=2)
 			if(!(isNaN(parseFloat(arr[i])))&&parseFloat(arr[i])>max)
 				max=parseFloat(arr[i]);
@@ -28,6 +47,8 @@
 	
 	function min(arr) {
 		var min = parseFloat(arr[3]);
+		if isNaN(min)
+			return minInt(arr);
 		for(let i = 5;i<arr.length;i+=2)
 			if(!(isNaN(parseFloat(arr[i])))&&parseFloat(arr[i])<min)
 				min=parseFloat(arr[i]);
@@ -35,7 +56,7 @@
 	}
 
 	function plot(canvas, ctx, data) {
-    const MAX_Y_AXIS_LABELS = 10;
+    	const MAX_Y_AXIS_LABELS = 10;
 
 		var nineTenthsHeight = (canvas.height*9)/10;
 		var oneTenthHeight = nineTenthsHeight/9;
@@ -66,17 +87,7 @@
 		var maximum = max(data);
 		var minimum = min(data);
 		var range = max - min;
-		var heightTicks = 0;
-    /*
-		for(let i = MAX_Y_AXIS_LABELS;i>1;i--) {
-			if(range!=i&&range%i==0) {
-				heightTicks=i;
-				break;
-			}
-		}
-    */
-		if(heightTicks==0)
-			heightTicks=MAX_Y_AXIS_LABELS;
+		var heightTicks =MAX_Y_AXIS_LABELS;
       
 			
 		var heightChange = (nineTenthsHeight - oneTenthHeight)/heightTicks;
@@ -89,11 +100,10 @@
 			ctx.lineTo(oneTenthWidth + (tickLength/2),oneTenthHeight+(i*heightChange));
 			ctx.stroke();
 			ctx.fillText((maximum-(i*valueChange)).toFixed(2),oneTenthWidth - (tickLength/2) - 32,oneTenthHeight+(i*heightChange));
-      //ctx.fillText(data[3+2*i],oneTenthWidth - (tickLength/2) - 32,oneTenthHeight+(i*heightChange));
 		}
 		
-    ctx.font="8px Courier New";
-		for(let i = 0;i<pointsToPlot;i++) {
+    		ctx.font="12px Courier New";
+		for(let i = 1;i<=pointsToPlot;i++) {
 			ctx.moveTo(oneTenthWidth + (i*widthChange),nineTenthsHeight - (tickLength/2));
 			ctx.lineTo(oneTenthWidth + (i*widthChange),nineTenthsHeight + (tickLength/2));
 			ctx.stroke();
@@ -111,13 +121,12 @@
 			ctx.lineTo(oneTenthWidth + (i*widthChange), nineTenthsHeight - yValue);
 			ctx.stroke();
 			ctx.beginPath();
-      ctx.arc(oneTenthWidth + (i*widthChange), nineTenthsHeight - yValue, 4, 0, 2 * Math.PI, false);
+      			ctx.arc(oneTenthWidth + (i*widthChange), nineTenthsHeight - yValue, 4, 0, 2 * Math.PI, false);
 			ctx.fill();
 		}
 	}
 	
-	function renderCanvas(cvId) {
-		const data = JSON.parse("{{data|escapejs}}");
+	function renderCanvas(cvId, data) {
 		const canvas = document.getElementById(cvId);
 
 		if(data.length==2||data.length%2!=0) {
@@ -131,7 +140,11 @@
 		ctx.font = "16px Courier New";
 		
 		plot(canvas, ctx, data);
-	}	
+	}
+	function draw() {
+		renderCanvas("canvas1",JSON.parse("{{data1|escapejs}}"));
+		renderCanvas("canvas2",JSON.parse("{{data2|escapejs}}"));
+	}
 </script>
 
 </body>
