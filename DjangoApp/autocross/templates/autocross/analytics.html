@@ -123,6 +123,7 @@
 			ctx.beginPath();
       			ctx.arc(oneTenthWidth + (i*widthChange), nineTenthsHeight - yValue, 4, 0, 2 * Math.PI, false);
 			ctx.fill();
+			ctx.fillText(data[3+(2*i)], oneTenthWidth + (i*widthChange), nineTenthsHeight - yValue + 12);
 		}
 	}
 	
