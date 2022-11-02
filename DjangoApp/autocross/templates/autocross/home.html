@@ -5,6 +5,10 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script href="../js/scripts.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css"/>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +21,15 @@
     <h1><center>Know Your A-Pax</center></h1>
    
 <br>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src = "https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript">
+$(document).ready( function () {
+    $('table.display').DataTable();
+} );
+</script>
+
 <p class="text-left"><h3>Recent Events</h3></p>
 {% for event,runs,pax_runs in all_data %}
 <div class="accordion" id="accordionExample">
@@ -40,7 +53,8 @@
     </h2>
     <div id="flush-collapseOneRaw{{ forloop.counter }}" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
       <div class="accordion-body">
-          <table class="table table-striped table-hover">
+          <table id = "" class="display">
+            <thead>
               <tr>
                   <th>Row #</th>
                   <th>Class</th>
@@ -50,7 +64,9 @@
                   <th>Raw Time</th>
                   <th>Pax Time</th>
                   
-              </tr>           
+              </tr>
+            </thead>
+          <tbody>           
           {% for run in runs %}
           <tr>
               <td>{{forloop.counter}}</td>
@@ -62,7 +78,8 @@
               <td>{{run.pax_time}}</td>
                            
           </tr>
-          {%endfor%} 
+          {%endfor%}
+          </tbody> 
           </table>
           </div>
     </div>
@@ -75,7 +92,8 @@
     </h2>
     <div id="flush-collapseTwoPax{{ forloop.counter }}" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
       <div class="accordion-body">
-        <table class="table table-striped table-hover">
+        <table id="" class="display">
+          <thead>
             <tr>
                 <th>Row #</th>
                 <th>Class</th>
@@ -85,7 +103,9 @@
                 <th>Raw Time</th>
                 <th>Pax Time</th>
                 
-            </tr>           
+            </tr>
+          </thead>
+        <tbody>           
         {% for prun in pax_runs %}
         <tr>
             <td>{{forloop.counter}}</td>
@@ -98,6 +118,7 @@
                          
         </tr>
         {%endfor%} 
+        </tbody>
         </table>
         </div>
       </div>
