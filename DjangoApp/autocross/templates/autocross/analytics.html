@@ -38,7 +38,7 @@
 	
 	function max(arr) {
 		var max = parseFloat(arr[3]);
-		if isNaN(max)
+		if (isNaN(max)) 
 			return maxInt(arr);
 		for(let i = 5;i<arr.length;i+=2)
 			if(!(isNaN(parseFloat(arr[i])))&&parseFloat(arr[i])>max)
@@ -48,7 +48,7 @@
 	
 	function min(arr) {
 		var min = parseFloat(arr[3]);
-		if isNaN(min)
+		if (isNaN(min))
 			return minInt(arr);
 		for(let i = 5;i<arr.length;i+=2)
 			if(!(isNaN(parseFloat(arr[i])))&&parseFloat(arr[i])<min)
@@ -108,7 +108,7 @@
 			ctx.moveTo(oneTenthWidth + (i*widthChange),nineTenthsHeight - (tickLength/2));
 			ctx.lineTo(oneTenthWidth + (i*widthChange),nineTenthsHeight + (tickLength/2));
 			ctx.stroke();
-			ctx.fillText(data[2+(2*i)],oneTenthWidth + (i*widthChange),nineTenthsHeight + (tickLength/2) + 32);
+			ctx.fillText(data[2+(2*(i-1))],oneTenthWidth + (i*widthChange),nineTenthsHeight + (tickLength/2) + 32);
 		}
 		
 		//move to origin
@@ -119,12 +119,12 @@
 		
 		for (let i = 0; i<pointsToPlot; i++) {
 			var yValue = ((parseFloat(data[3+(2*i)]))/maximum)*(nineTenthsHeight-oneTenthHeight);
-			ctx.lineTo(oneTenthWidth + (i*widthChange), nineTenthsHeight - yValue);
+			ctx.lineTo(oneTenthWidth + ((i+1)*widthChange), nineTenthsHeight - yValue);
 			ctx.stroke();
 			ctx.beginPath();
-      			ctx.arc(oneTenthWidth + (i*widthChange), nineTenthsHeight - yValue, 4, 0, 2 * Math.PI, false);
+      			ctx.arc(oneTenthWidth + ((i+1)*widthChange), nineTenthsHeight - yValue, 4, 0, 2 * Math.PI, false);
 			ctx.fill();
-			ctx.fillText(data[3+(2*i)], oneTenthWidth + (i*widthChange), nineTenthsHeight - yValue + 12);
+			ctx.fillText(data[3+(2*i)], oneTenthWidth + ((i+1)*widthChange), nineTenthsHeight - yValue + 12);
 		}
 	}
 	
