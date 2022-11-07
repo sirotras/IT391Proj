@@ -58,7 +58,7 @@ def analytics(request):
     sugg_list = current_profile.suggestion_list.split('|')
     sugg_list.pop()
     run_list = []
-    coordinates = ["Run Date" , "Difference From First (Raw)"]
+    coordinates1 = ["Run Date" , "Difference From First (Raw)"]
     #gets the best run data for each best run id
     for brun_id in sugg_list:
         run = Best_run_data.objects.get(b_run_id=int(brun_id))
@@ -69,10 +69,16 @@ def analytics(request):
     #adding data to coordinates
     for run in run_list:
         if run.raw_diff_first != "":
-            coordinates.append(str(run.run_id.event_id.date))
-            coordinates.append(str(run.raw_diff_first))
-    dataJSON = dumps(coordinates)
-    context = {'run_list':run_list,'sugg_list':sugg_list, 'data':dataJSON}
+            coordinates1.append(str(run.run_id.event_id.date))
+            coordinates1.append(str(run.raw_diff_first))
+    dataJSON1 = dumps(coordinates1)
+    
+    coordinates2 = ["Run Date" , "Difference From First (PAX)"] 
+    #TODO fill coordinates2 
+    
+    dataJSON2 = dumps(coordinates2)
+    
+    context = {'run_list':run_list,'sugg_list':sugg_list, 'data1':dataJSON1, 'data2':dataJSON2 , 'cones':current_profile.total_cone_count}
     return render(request,'autocross/analytics.html', context=context)
 
 @login_required
