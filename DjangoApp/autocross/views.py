@@ -87,3 +87,21 @@ def dashboard(request):
 
 def leaderboard(request):
     return render(request,'autocross/leaderboard.html')
+
+def all_events(request):
+    years = ['2022','2021','2020']
+    all_data = {'2022':'2022 Data', '2021':'2021 Data', '2020':'2020 Data'}
+    year_data = ""
+    
+    if(request.GET.get('2022')):
+        year_data = all_data['2022']
+    elif (request.GET.get('2021')):
+        year_data = all_data['2021']
+    elif (request.GET.get('2020')):
+        year_data = all_data['2020']
+    else:
+        year_data = ""
+
+    
+    context = {'years':years,'year_data':year_data}
+    return render(request, 'autocross/all_events.html', context = context)
