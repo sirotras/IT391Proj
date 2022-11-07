@@ -92,16 +92,20 @@ def all_events(request):
     years = ['2022','2021','2020']
     all_data = {'2022':'2022 Data', '2021':'2021 Data', '2020':'2020 Data'}
     year_data = ""
+    year_data = []
+    if(request.GET.get('year_btn')):        
+        year = request.GET['year_btn']
+        #check to see if the keys exists, if not it will still show no data
+        if year in all_data:
+            #gets all events by year and sorts by most recent
+            yearly_events = Event.objects.all().filter(date__year=int(year)).order_by('-date')
+            for event in yearly_events:
+                runs = Best_run_data.objects.select_related('run_id__event_id').filter(run_id__event_id__event_id=event.event_id)
+                year_data.append((event, runs))
+                all_data[year]=year_data
 
-    if(request.GET.get('2022')):
-        year_data = all_data['2022']
-    elif (request.GET.get('2021')):
-        year_data = all_data['2021']
-    elif (request.GET.get('2020')):
-        year_data = all_data['2020']
-    else:
-        year_data = ""
-
+            
+        
     
     context = {'years':years,'year_data':year_data}
     return render(request, 'autocross/all_events.html', context = context)

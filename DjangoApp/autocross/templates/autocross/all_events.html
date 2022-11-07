@@ -16,15 +16,46 @@
     <!--Add your code below here-->
     <form action="#" method="get"> 
         <ul>
-            <li> <input type="submit" type="button" class="btn btn-primary" value="2022" name="2022"></li>
-            <li><input type="submit" type="button" class="btn btn-primary" value="2021" name="2021"></li>
-            <li><input type="submit" type="button" class="btn btn-primary" value="2020" name="2020"></li>
+            <li> <input type="submit" type="button" class="btn btn-primary" value="2022" name="year_btn"></li>
+            <li><input type="submit" type="button" class="btn btn-primary" value="2021" name="year_btn"></li>
+            <li><input type="submit" type="button" class="btn btn-primary" value="2020" name="year_btn"></li>
         </ul>       
         
     </form>
 
     <h2>Showing Year data below this...</h2>
-    {{year_data}}
+    {% for event,runs in year_data %}
+    <h4>{{event.date}} {{event.name}} {{event.location}}</h4>
+    <table id = "" class="display">
+        <thead>
+          <tr>
+              <th>Row #</th>
+              <th>Class</th>
+              <th>Car #</th>
+              <th>Driver Name</th>
+              <th>Class Pos</th>
+              <th>Raw Time</th>
+              <th>Pax Time</th>
+              
+          </tr>
+        </thead>
+      <tbody>           
+      {% for run in runs %}
+      <tr>
+          <td>{{forloop.counter}}</td>
+          <td>{{run.run_id.class_name}}</td>
+          <td>{{run.run_id.car_num}}</td>
+          <td>{{run.run_id.driver_name}}</td>
+          <td>{{run.raw_class_position}}</td>
+          <td>{{run.run_id.time}}</td>
+          <td>{{run.pax_time}}</td>
+                       
+      </tr>
+      {%endfor%}
+      </tbody> 
+      </table>
+    
+    {% endfor %}
 
 </body>
 </html>
