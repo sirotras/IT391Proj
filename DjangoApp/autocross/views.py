@@ -66,7 +66,7 @@ def analytics(request):
         run_list.append(run)
         
     #sorting run list oldest events first
-    run_list.sort(key=lambda x: x.run_id.event_id.date, reverse=True)
+    run_list.sort(key=lambda x: x.run_id.event_id.date)
     #adding raw and pax data to coordinates1 & 2
     for run in run_list:
         if run.raw_diff_first != "":
