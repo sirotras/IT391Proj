@@ -11,11 +11,15 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" id="navHome" href="{% url 'autocross:home' %}">Home</a>
           </li>
+          <!--All events button-->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" id="navAllEvents" href="{% url 'autocross:all_events' %}">All Events</a>
+          </li>
           {% if user.is_authenticated %}          
           {% else %}
           <!--Signup button-->
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" id="navHome" href="{% url 'autocross:signup' %}">Sign Up</a>
+            <a class="nav-link active" aria-current="page" id="navSignUp" href="{% url 'autocross:signup' %}">Sign Up</a>
           </li>
           {% endif %}
          <!--Login Button-->

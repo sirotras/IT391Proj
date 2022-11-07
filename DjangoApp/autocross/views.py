@@ -59,23 +59,23 @@ def analytics(request):
     sugg_list.pop()
     run_list = []
     coordinates1 = ["Run Date" , "Difference From First (Raw)"]
+    coordinates2 = ["Run Date" , "Difference From First (PAX)"] 
     #gets the best run data for each best run id
     for brun_id in sugg_list:
         run = Best_run_data.objects.get(b_run_id=int(brun_id))
         run_list.append(run)
         
-    #sorting run list most recent event first
+    #sorting run list oldest events first
     run_list.sort(key=lambda x: x.run_id.event_id.date, reverse=True)
-    #adding data to coordinates
+    #adding raw and pax data to coordinates1 & 2
     for run in run_list:
         if run.raw_diff_first != "":
             coordinates1.append(str(run.run_id.event_id.date))
             coordinates1.append(str(run.raw_diff_first))
-    dataJSON1 = dumps(coordinates1)
-    
-    coordinates2 = ["Run Date" , "Difference From First (PAX)"] 
-    #TODO fill coordinates2 
-    
+        if run.pax_diff_first != "":
+            coordinates2.append(str(run.run_id.event_id.date))
+            coordinates2.append(str(run.pax_diff_first)) 
+    dataJSON1 = dumps(coordinates1)        
     dataJSON2 = dumps(coordinates2)
     
     context = {'run_list':run_list,'sugg_list':sugg_list, 'data1':dataJSON1, 'data2':dataJSON2 , 'cones':current_profile.total_cone_count}
@@ -87,3 +87,25 @@ def dashboard(request):
 
 def leaderboard(request):
     return render(request,'autocross/leaderboard.html')
+
+def all_events(request):
+    years = ['2022','2021','2020']
+    all_data = {'2022':'2022 Data', '2021':'2021 Data', '2020':'2020 Data'}
+    year_data = ""
+    year_data = []
+    if(request.GET.get('year_btn')):        
+        year = request.GET['year_btn']
+        #check to see if the keys exists, if not it will still show no data
+        if year in all_data:
+            #gets all events by year and sorts by most recent
+            yearly_events = Event.objects.all().filter(date__year=int(year)).order_by('-date')
+            for event in yearly_events:
+                runs = Best_run_data.objects.select_related('run_id__event_id').filter(run_id__event_id__event_id=event.event_id)
+                year_data.append((event, runs))
+                all_data[year]=year_data
+
+            
+        
+    
+    context = {'years':years,'year_data':year_data}
+    return render(request, 'autocross/all_events.html', context = context)
