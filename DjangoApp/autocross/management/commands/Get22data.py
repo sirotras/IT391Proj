@@ -270,8 +270,8 @@ def get_data(page_url):
         #Creating an event instance into database
         date_list = date.split('-')
         month = int(date_list[0])
-        day = int(date_list[0])
-        year = int(date_list[0])
+        day = int(date_list[1])
+        year = int(date_list[2])
         event_date = datetime.date(year,month,day)
         event_instance = Event(date = event_date, location = raw_data_list[0][0], name = raw_data_list[2][0])
         event_instance.save()       
