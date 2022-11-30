@@ -410,7 +410,8 @@ def get_data(page_url):
                 pax_diff_first = pax_diff_first,
                 cones_hit_event = cones_hit_event,
                 three_run_avg = three_run_avg
-            )            
+            )
+            best_run_data_instance.save()            
         #
     #    
     #clean up old files
