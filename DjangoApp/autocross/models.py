@@ -68,37 +68,57 @@ class Profile(models.Model):
         '''        
         name = self.user.get_full_name().lower()
         if self.suggestion_list == '':
-            print("noData")
-            all_runs = Best_run_data.objects.all()
-            for run in all_runs:
-                driver_name = run.run_id.driver_name.lower()
-                ratio = fuzz.ratio(name, driver_name )                
-                if ratio > 90:
-                    #print(f"name:{name}  | dname: {driver_name} | ratio:{ratio}")
-                    self.suggestion_list+= str(run.b_run_id)+'|'
+            print("noData")            
+            all_events = Event.objects.all()            
+            for event in all_events:
+                #adding event id to checked list
+                self.events_checked_list += str(event.event_id) + '|'
+                #grabbing all runs with event id 
+                event_runs = Best_run_data.objects.select_related('run_id__event_id').filter(run_id__event_id__event_id=event.event_id)
+                #checking each run in the event if there is a match add to suggestion list
+                for run in event_runs:
+                    driver_name = run.run_id.driver_name.lower()
+                    ratio = fuzz.ratio(name, driver_name )                
+                    if ratio > 90:
+                        #print(f"name:{name}  | dname: {driver_name} | ratio:{ratio}")
+                        self.suggestion_list+= str(run.b_run_id)+'|'
+            #
             self.save()
-        else:
-            print("SomeData")
+        else:            
             suggest_string_list = self.suggestion_list.split('|')
             suggest_string_list.pop()
-            all_runs = Best_run_data.objects.all()
-            for run in all_runs:
-                if str(run.b_run_id) not in suggest_string_list:
-                    ratio = fuzz.ratio(name, run.run_id.driver_name.lower())
-                    if ratio > 90:
-                        self.suggestion_list+= str(run.b_run_id)+'|'
+            checked_event_list = self.events_checked_list.split('|')
+            checked_event_list.pop()
+
+            all_events = Event.objects.all()
+            for event in all_events:
+                #if the id is not in the list we will check the event runs for matches
+                if str(event.event_id) not in checked_event_list:
+                    #adding id to events_checked list
+                    self.events_checked_list += str(event.event_id) + '|'
+                    #grabbing all runs with event id 
+                    event_runs = Best_run_data.objects.select_related('run_id__event_id').filter(run_id__event_id__event_id=event.event_id)
+                    #checking each run in the event if there is a match add to suggestion list
+                    for run in event_runs:
+                        driver_name = run.run_id.driver_name.lower()
+                        if str(run.b_run_id) not in suggest_string_list:
+                            ratio = fuzz.ratio(name, driver_name)
+                            if ratio > 90:
+                                self.suggestion_list+= str(run.b_run_id)+'|'
+            #
             self.save()
     
     def add_to_run_list(self,id):
         '''
         Takes in a best run id as a str, removes it from suggestion list,
-        and adds to run list.
+        and adds to run list if not already added.
         '''  
         local_run_list = self.run_list.split('|')
         local_run_list.pop()
-        if id not in local_run_list:
-            sugg_list = self.suggestion_list.split('|')
-            sugg_list.pop()
+        sugg_list = self.suggestion_list.split('|')
+        sugg_list.pop()
+        #add remove from sugglist and add to run list
+        if id not in local_run_list:            
             sugg_list.remove(id)            
             self.suggestion_list = ''
 
@@ -108,7 +128,14 @@ class Profile(models.Model):
                 self.suggestion_list+= (sugg_id + '|')
             for run_id in local_run_list:
                 self.run_list+= (run_id + '|')
-            self.save()  
+            self.save()
+        else:
+            #already in run list, remove from sugg list
+            sugg_list.remove(id)
+            self.suggestion_list = ''
+            for sugg_id in sugg_list:
+                self.suggestion_list+= (sugg_id + '|') 
+            self.save() 
 
     def remove_from_run_list(self,id):
         '''

@@ -49,6 +49,7 @@ def user_profile(request):
     #Rests the suggestion list
     if(request.GET.get('sugg_reset')):
         current_profile.suggestion_list = ''
+        current_profile.events_checked_list = ''
         current_profile.save()
     #Resets the runs list
     if(request.GET.get('run_reset')):
@@ -57,6 +58,8 @@ def user_profile(request):
 
     sugg_list = current_profile.suggestion_list.split('|')
     sugg_list.pop()
+    events_checked = current_profile.events_checked_list.split('|')
+    events_checked.pop()
     local_run_list = current_profile.run_list.split('|')
     local_run_list.pop()
     #will hold the runs based of best run id brun
@@ -69,7 +72,7 @@ def user_profile(request):
         run = Best_run_data.objects.get(b_run_id=int(brun_id))
         run_run_list.append(run)
 
-    context = {'sugg_run_list':sugg_run_list,'sugg_list':sugg_list, 'run_run_list':run_run_list}    
+    context = {'sugg_run_list':sugg_run_list,'sugg_list':sugg_list, 'run_run_list':run_run_list,'events_checked':events_checked}    
     return render(request, 'autocross/user_profile.html', context=context)
 
 class SignUpView(CreateView):
