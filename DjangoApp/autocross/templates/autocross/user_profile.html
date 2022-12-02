@@ -10,32 +10,118 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"/>
+  <link rel = "stylesheet" type = "text/css" href = "https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css"/>
 </head>
 <body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src = "https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript">
+$(document).ready( function () {
+    $('table.display').DataTable();
+} );
+</script>
     <!--NavBar-->
     {% extends "base.html" %}
     {% block below %}
      
     <h1 class="text-center">Account Profile</h1>
-    <h3>Your Runs</h3>
-    <table class="table table-dark">
-        <th>Name</th>
-        <th>Time</th>
-        <th>Position</th>
-        <th>Date</th>
-        {% for run in run_list %}
-        <tr>
-            <td>{{run.run_id.driver_name}}</td>
-            <td>{{run.run_id.time}}</td>
-            <td>{{run.raw_class_position}}</td>
-            <td>{{run.run_id.event_id.date}}</td>
-        </tr>
-        {% endfor %}
-    </table>
-    <p>SuggList: {{sugg_list}}</p>
-    <form action="#" method="get">        
-        <input type="submit" type="button" class="btn btn-primary" value="Update Suggestions" name="suggbtn">
-    </form>
+    <h2>Welcome: {{user.get_full_name}}</h2>
+    <h4>Lifetime Cones hit: {{user.profile.total_cone_count}}</h4>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Your Runs
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <table id = "" class="display">
+                <thead>
+              <th>Name</th>
+              <th>Time</th>
+              <th>Position</th>
+              <th>Date</th>
+              <th>Remove Run</th>
+                </thead>
+            <tbody>
+              {% for run in run_run_list %}
+              <tr>
+                  <td>{{run.run_id.driver_name}}</td>
+                  <td>{{run.run_id.time}}</td>
+                  <td>{{run.raw_class_position}}</td>
+                  <td>{{run.run_id.event_id.date}}</td>
+                  <td>
+                    <form action="#" method="get">
+                        <button type="submit" class="btn btn-danger" value = "{{run.b_run_id}}" name="run_rem">Remove</button>
+                    </form>
+                  </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+              </table>
+              <form action="#" method="get">
+                <button type="submit" class="btn btn-danger" value = "reset" name="run_reset">Reset Runs</button>
+              </form>
+            </div>
+          </div>
+        </div>  
+    </div>
+
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+              Suggested Runs
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <table id = "" class="display">
+                <thead>
+              <th>Name</th>
+              <th>Time</th>
+              <th>Position</th>
+              <th>Date</th>
+              <th>Add Run</th>
+              <th>Remove Run</th>
+              <th>ID</th> 
+            </thead>
+            <tbody>             
+              {% for run in sugg_run_list %}
+              <tr>
+                  <td>{{run.run_id.driver_name}}</td>
+                  <td>{{run.run_id.time}}</td>
+                  <td>{{run.raw_class_position}}</td>
+                  <td>{{run.run_id.event_id.date}}</td>
+                  <td>
+                    <form action="#" method="get">
+                    <button type="submit" class="btn btn-success" value = "{{run.b_run_id}}" name="sugg_add">Add</button>
+                    </form>
+                  </td>
+                  <td>                    
+                    <form action="#" method="get">
+                        <button type="submit" class="btn btn-danger" value = "{{run.b_run_id}}" name="sugg_rem">Remove</button>
+                    </form>
+                  </td>
+                  <td>{{run.b_run_id}}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+              </table>
+              <p>SuggList: {{sugg_list}}</p>
+              <form action="#" method="get">        
+                  <input type="submit" type="button" class="btn btn-primary" value="Update Suggestions" name="suggbtn">
+              </form>
+              <form action="#" method="get">
+                <button type="submit" class="btn btn-danger" value = "reset" name="sugg_reset">Reset Suggestions</button>
+              </form>
+            </div>
+          </div>
+        </div>  
+      </div>
     {% block navbar%}
     {% endblock %}
 </body>

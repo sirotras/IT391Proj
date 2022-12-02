@@ -28,20 +28,48 @@ def home(request):
 @login_required
 def user_profile(request):
     current_user = request.user
-    print(current_user.id)
+    #print(current_user.id)
     current_profile = request.user.profile
-    print(current_profile.id)
+    #print(current_profile.id)
     
+    #update suggestions
     if(request.GET.get('suggbtn')):
         current_profile.get_suggestions()
 
+    #adding run to run list
+    if(request.GET.get('sugg_add')):
+        current_profile.add_to_run_list(request.GET['sugg_add'])
+    #Removing run from suggestion list
+    if(request.GET.get('sugg_rem')):
+        print(request.GET['sugg_rem'])
+        current_profile.remove_from_sugg_list(request.GET['sugg_rem'])
+    #Removing run from run list
+    if(request.GET.get('run_rem')):
+        current_profile.remove_from_run_list(request.GET['run_rem'])
+    #Rests the suggestion list
+    if(request.GET.get('sugg_reset')):
+        current_profile.suggestion_list = ''
+        current_profile.save()
+    #Resets the runs list
+    if(request.GET.get('run_reset')):
+        current_profile.run_list = ''
+        current_profile.save()
+
     sugg_list = current_profile.suggestion_list.split('|')
     sugg_list.pop()
-    run_list = []
+    local_run_list = current_profile.run_list.split('|')
+    local_run_list.pop()
+    #will hold the runs based of best run id brun
+    sugg_run_list =[]
+    run_run_list = []
     for brun_id in sugg_list:
         run = Best_run_data.objects.get(b_run_id=int(brun_id))
-        run_list.append(run)    
-    context = {'run_list':run_list,'sugg_list':sugg_list}    
+        sugg_run_list.append(run)
+    for brun_id in local_run_list:
+        run = Best_run_data.objects.get(b_run_id=int(brun_id))
+        run_run_list.append(run)
+
+    context = {'sugg_run_list':sugg_run_list,'sugg_list':sugg_list, 'run_run_list':run_run_list}    
     return render(request, 'autocross/user_profile.html', context=context)
 
 class SignUpView(CreateView):
@@ -55,20 +83,20 @@ def analytics(request):
     current_profile = request.user.profile
     #Gets suggestion list without the pipe as a list
     #holds the best run id
-    sugg_list = current_profile.suggestion_list.split('|')
-    sugg_list.pop()
-    run_list = []
+    local_run_list = current_profile.run_list.split('|')
+    local_run_list.pop()
+    run_run_list = []
     coordinates1 = ["Run Date" , "Difference From First (Raw)"]
     coordinates2 = ["Run Date" , "Difference From First (PAX)"] 
     #gets the best run data for each best run id
-    for brun_id in sugg_list:
+    for brun_id in local_run_list:
         run = Best_run_data.objects.get(b_run_id=int(brun_id))
-        run_list.append(run)
+        run_run_list.append(run)
         
     #sorting run list oldest events first
-    run_list.sort(key=lambda x: x.run_id.event_id.date)
+    run_run_list.sort(key=lambda x: x.run_id.event_id.date)
     #adding raw and pax data to coordinates1 & 2
-    for run in run_list:
+    for run in run_run_list:
         if run.raw_diff_first != "":
             coordinates1.append(str(run.run_id.event_id.date))
             coordinates1.append(str(run.raw_diff_first))
@@ -78,7 +106,7 @@ def analytics(request):
     dataJSON1 = dumps(coordinates1)        
     dataJSON2 = dumps(coordinates2)
     
-    context = {'run_list':run_list,'sugg_list':sugg_list, 'data1':dataJSON1, 'data2':dataJSON2 , 'cones':current_profile.total_cone_count}
+    context = {'run_list':run_run_list,'sugg_list':run_run_list, 'data1':dataJSON1, 'data2':dataJSON2 , 'cones':current_profile.total_cone_count}
     return render(request,'autocross/analytics.html', context=context)
 
 @login_required

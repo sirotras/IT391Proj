@@ -61,15 +61,20 @@ class Profile(models.Model):
 
     
     def get_suggestions(self):
-        print("hello")
-        name = self.user.get_full_name()
-
+        '''
+        If suggestion list is blank, looks through all entries
+        If there is some data, it will check if that id is already added
+        if not, it will add the id to the list
+        '''        
+        name = self.user.get_full_name().lower()
         if self.suggestion_list == '':
             print("noData")
             all_runs = Best_run_data.objects.all()
             for run in all_runs:
-                ratio = fuzz.ratio(name, run.run_id.driver_name)
+                driver_name = run.run_id.driver_name.lower()
+                ratio = fuzz.ratio(name, driver_name )                
                 if ratio > 90:
+                    #print(f"name:{name}  | dname: {driver_name} | ratio:{ratio}")
                     self.suggestion_list+= str(run.b_run_id)+'|'
             self.save()
         else:
@@ -79,10 +84,55 @@ class Profile(models.Model):
             all_runs = Best_run_data.objects.all()
             for run in all_runs:
                 if str(run.b_run_id) not in suggest_string_list:
-                    ratio = fuzz.ratio(name, run.run_id.driver_name)
+                    ratio = fuzz.ratio(name, run.run_id.driver_name.lower())
                     if ratio > 90:
                         self.suggestion_list+= str(run.b_run_id)+'|'
             self.save()
+    
+    def add_to_run_list(self,id):
+        '''
+        Takes in a best run id as a str, removes it from suggestion list,
+        and adds to run list.
+        '''  
+        local_run_list = self.run_list.split('|')
+        local_run_list.pop()
+        if id not in local_run_list:
+            sugg_list = self.suggestion_list.split('|')
+            sugg_list.pop()
+            sugg_list.remove(id)            
+            self.suggestion_list = ''
+
+            self.run_list = ''
+            local_run_list.append(id)
+            for sugg_id in sugg_list:
+                self.suggestion_list+= (sugg_id + '|')
+            for run_id in local_run_list:
+                self.run_list+= (run_id + '|')
+            self.save()  
+
+    def remove_from_run_list(self,id):
+        '''
+        Takes in a best run id as a str, removes form run list
+        '''
+        local_run_list = self.run_list.split('|')
+        local_run_list.pop()
+        local_run_list.remove(id)
+        self.run_list = ''
+        for run_id in local_run_list:
+            self.run_list+= (run_id + '|')
+        self.save()
+
+    def remove_from_sugg_list(self,id):
+        '''
+        Takes in a best run id as a str, removes form suggestion list
+        '''
+        sugg_list = self.suggestion_list.split('|')
+        sugg_list.pop()
+        sugg_list.remove(id)
+        self.suggestion_list = ''
+        for sugg_id in sugg_list:
+            self.suggestion_list+= (sugg_id + '|')
+        self.save()
             
 
 @receiver(post_save, sender=User)
