@@ -60,6 +60,18 @@ class Profile(models.Model):
     events_checked_list = models.TextField(blank=True)
 
     
+    def count_cones(self):
+        '''
+        Adds up the total cones hit for all events in run list
+        '''
+        local_run_list = self.run_list.split('|')
+        local_run_list.pop()
+        self.total_cone_count = 0
+        for brun_id in local_run_list:
+            run = Best_run_data.objects.get(b_run_id = brun_id)
+            self.total_cone_count+= run.cones_hit_event
+        self.save()        
+    
     def get_suggestions(self):
         '''
         If suggestion list is blank, looks through all entries

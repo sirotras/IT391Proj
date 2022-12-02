@@ -56,6 +56,8 @@ def user_profile(request):
         current_profile.run_list = ''
         current_profile.save()
 
+    current_profile.count_cones()
+    
     sugg_list = current_profile.suggestion_list.split('|')
     sugg_list.pop()
     events_checked = current_profile.events_checked_list.split('|')
