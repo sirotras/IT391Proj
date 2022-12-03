@@ -41,13 +41,13 @@ class Best_run_data(models.Model):
 
 class Run_notes(models.Model):
     note_id = models.AutoField(primary_key=True)
-    tire_pressure = models.CharField(max_length=50)
-    tire_wear = models.CharField(max_length=100)
-    comments = models.TextField()
+    tire_pressure = models.CharField(max_length=50,blank=True)
+    tire_wear = models.CharField(max_length=100,blank=True)
+    comments = models.TextField(blank=True)
     user_id = models.ForeignKey('Profile',on_delete=models.CASCADE)
     b_run_id = models.ForeignKey('Best_run_data', on_delete=models.SET_NULL,null = True)
-    run_id = run_id = models.ForeignKey('Run_data', on_delete=models.SET_NULL,null = True)
-    video_link = models.URLField(max_length=250)
+    run_id = models.ForeignKey('Run_data', on_delete=models.SET_NULL,null = True)
+    video_link = models.URLField(max_length=250,blank=True)
 
 
 class Profile(models.Model):
