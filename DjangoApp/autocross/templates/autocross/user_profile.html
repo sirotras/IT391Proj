@@ -44,20 +44,22 @@ $(document).ready( function () {
               <th>Time</th>
               <th>Position</th>
               <th>Date</th>
+              <th>ID</th>              
               <th>Remove Run</th>
                 </thead>
             <tbody>
-              {% for run in run_run_list %}
+              {% for run,note in run_note_list %}
               <tr>
                   <td>{{run.run_id.driver_name}}</td>
                   <td>{{run.run_id.time}}</td>
                   <td>{{run.raw_class_position}}</td>
                   <td>{{run.run_id.event_id.date}}</td>
+                  <td>{{run.b_run_id}}</td>
                   <td>
                     <form action="#" method="get">
                         <button type="submit" class="btn btn-danger" value = "{{run.b_run_id}}" name="run_rem">Remove</button>
                     </form>
-                  </td>
+                  </td>                                    
               </tr>
               {% endfor %}
             </tbody>

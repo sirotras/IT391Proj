@@ -140,6 +140,8 @@ class Profile(models.Model):
                 self.suggestion_list+= (sugg_id + '|')
             for run_id in local_run_list:
                 self.run_list+= (run_id + '|')
+            run_note_instance = Run_notes(b_run_id = Best_run_data.objects.get(b_run_id = int(id)), user_id = self)
+            run_note_instance.save()
             self.save()
         else:
             #already in run list, remove from sugg list
@@ -159,6 +161,8 @@ class Profile(models.Model):
         self.run_list = ''
         for run_id in local_run_list:
             self.run_list+= (run_id + '|')
+        run_note_instance = Run_notes.objects.get(b_run_id = Best_run_data.objects.get(b_run_id = int(id)))
+        run_note_instance.delete()
         self.save()
 
     def remove_from_sugg_list(self,id):
@@ -172,6 +176,17 @@ class Profile(models.Model):
         for sugg_id in sugg_list:
             self.suggestion_list+= (sugg_id + '|')
         self.save()
+
+    def remove_all_run_notes(self):
+        '''
+        Deletes all notes associated with the users runlist
+        '''
+        local_run_list = self.run_list.split('|')
+        local_run_list.pop()
+        for id in local_run_list:
+            run_note_instance = Run_notes.objects.get(b_run_id = Best_run_data.objects.get(b_run_id = int(id)))
+            run_note_instance.delete()
+        
             
 
 @receiver(post_save, sender=User)
