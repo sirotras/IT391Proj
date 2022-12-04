@@ -24,6 +24,7 @@ $(document).ready( function () {
 } );
 </script>
     <!--Add your code below here-->
+    <h2>Click a button to dislay data of that year or display all data</h2>
     <form action="#" method="get">        
         <ul>
           {% for year in years %}
@@ -31,10 +32,6 @@ $(document).ready( function () {
           {% endfor %}
         </ul>
     </form>
-
-    <h2>Showing Year data below this...</h2>
-
-
     
     {% for event,runs in year_data %}
     <div class="accordion" id="accordionExample">

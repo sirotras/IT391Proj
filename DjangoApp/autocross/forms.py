@@ -5,6 +5,7 @@ from django import forms
 from django.forms import ModelForm
 from .models import Run_notes
 
+#user sign up form
 class SignUpForm(UserCreationForm):
     email = forms.EmailField(widget=forms.EmailInput(attrs={'class':'form-control'}))
     first_name = forms.CharField(max_length=30, widget=forms.TextInput(attrs={'class':'form-control'}))
@@ -20,6 +21,7 @@ class SignUpForm(UserCreationForm):
         self.fields['password1'].widget.attrs['class']= 'form-control'
         self.fields['password2'].widget.attrs['class']= 'form-control'
 
+#form for run notes, allowing the select fields to be updated
 class RunNotesForm(ModelForm):
     class Meta:
         model = Run_notes

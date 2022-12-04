@@ -146,11 +146,12 @@ class Profile(models.Model):
             self.save()
         else:
             #already in run list, remove from sugg list
-            sugg_list.remove(id)
-            self.suggestion_list = ''
-            for sugg_id in sugg_list:
-                self.suggestion_list+= (sugg_id + '|') 
-            self.save() 
+            if id in sugg_list:
+                sugg_list.remove(id)
+                self.suggestion_list = ''
+                for sugg_id in sugg_list:
+                    self.suggestion_list+= (sugg_id + '|') 
+                self.save() 
 
     def remove_from_run_list(self,id):
         '''
@@ -158,13 +159,14 @@ class Profile(models.Model):
         '''
         local_run_list = self.run_list.split('|')
         local_run_list.pop()
-        local_run_list.remove(id)
-        self.run_list = ''
-        for run_id in local_run_list:
-            self.run_list+= (run_id + '|')
-        run_note_instance = Run_notes.objects.get(b_run_id = Best_run_data.objects.get(b_run_id = int(id)))
-        run_note_instance.delete()
-        self.save()
+        if id in local_run_list:
+            local_run_list.remove(id)
+            self.run_list = ''
+            for run_id in local_run_list:
+                self.run_list+= (run_id + '|')
+            run_note_instance = Run_notes.objects.get(b_run_id = Best_run_data.objects.get(b_run_id = int(id)))
+            run_note_instance.delete()
+            self.save()
 
     def remove_from_sugg_list(self,id):
         '''
@@ -172,7 +174,8 @@ class Profile(models.Model):
         '''
         sugg_list = self.suggestion_list.split('|')
         sugg_list.pop()
-        sugg_list.remove(id)
+        if id in sugg_list:
+            sugg_list.remove(id)
         self.suggestion_list = ''
         for sugg_id in sugg_list:
             self.suggestion_list+= (sugg_id + '|')

@@ -26,15 +26,18 @@ def home(request):
     return render(request, 'autocross/home.html', context = context)
 
 @login_required
-def user_profile(request):    
+def user_profile(request): 
+    #get current user's profile   
     current_profile = request.user.profile
-    #print(current_profile.id)
+    
+    #holds the current note instance by getting a note_id
     instance = None
     if(request.GET.get('note_id')):
         print("InRequest")
         print(request.GET['note_id'])
         instance = Run_notes.objects.get(note_id = int(request.GET['note_id']))
-    #form = None
+    
+    #creates/updates a note instance
     if request.method == 'POST':
         form = RunNotesForm(request.POST or None, instance=instance)
         if form.is_valid():
@@ -66,9 +69,20 @@ def user_profile(request):
         current_profile.remove_all_run_notes()
         current_profile.run_list = ''
         current_profile.save()
+    #add all runs in suggestion list
+    if(request.GET.get('add_all')):
+        current_sugg_list = current_profile.suggestion_list.split('|')
+        current_sugg_list.pop()
+        for id in current_sugg_list:
+            current_profile.remove_from_sugg_list(id)
+            current_profile.add_to_run_list(id)
+        
 
+
+    #gets lifetime cone count
     current_profile.count_cones()
     
+    #get suggestion, runs, and events checked list
     sugg_list = current_profile.suggestion_list.split('|')
     sugg_list.pop()
     events_checked = current_profile.events_checked_list.split('|')
@@ -89,6 +103,7 @@ def user_profile(request):
     context = {'sugg_run_list':sugg_run_list,'sugg_list':sugg_list, 'run_note_list':run_note_list,'events_checked':events_checked, 'form':form}    
     return render(request, 'autocross/user_profile.html', context=context)
 
+#user signup
 class SignUpView(CreateView):
     form_class = SignUpForm
     success_url = reverse_lazy('login')
@@ -149,10 +164,10 @@ def all_events(request):
                     runs = Best_run_data.objects.select_related('run_id__event_id').filter(run_id__event_id__event_id=event.event_id)
                     year_data.append((event, runs))
         # 
-    ##adding run to run list
-    
+    #getting a user profile if the user is authenticated    
     if request.user.is_authenticated:
         current_profile = request.user.profile
+    #adding run to run list
     if(request.GET.get('sugg_add')):
         current_profile.add_to_run_list(request.GET['sugg_add'])    
     context = {'years':years,'year_data':year_data}

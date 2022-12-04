@@ -39,6 +39,9 @@ $(document).ready( function () {
               <th>Time</th>
               <th>Position</th>
               <th>Date</th>
+              <th>Cones Run</th>
+              <th>Cones Event</th>
+              <th>First 3 Run Avg</th>
               <th>ID</th>              
               <th>Remove Run</th>
               <th>Notes</th>
@@ -50,7 +53,10 @@ $(document).ready( function () {
                   <td>{{run.run_id.time}}</td>
                   <td>{{run.raw_class_position}}</td>
                   <td>{{run.run_id.event_id.date}}</td>
-                  <td>{{run.b_run_id}}</td>
+                  <td>{{run.run_id.cones_hit}}</td>
+                  <td>{{run.cones_hit_event}}</td>
+                  <td>{{run.three_run_avg}}</td>
+                  <td>{{run.b_run_id}}</td>                  
                   <td>
                     <form action="#" method="get">
                         <button type="submit" class="btn btn-danger" value = "{{run.b_run_id}}" name="run_rem">Remove</button>
@@ -135,6 +141,9 @@ $(document).ready( function () {
               </form>
               <form action="#" method="get">
                 <button type="submit" class="btn btn-danger" value = "reset" name="sugg_reset">Reset Suggestions</button>
+              </form>
+              <form action="#" method="get">
+                <button type="submit" class="btn btn-success" value = "reset" name="add_all">Add All  Runs</button>
               </form>
             </div>
           </div>
