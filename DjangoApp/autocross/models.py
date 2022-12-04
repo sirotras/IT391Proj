@@ -130,8 +130,9 @@ class Profile(models.Model):
         sugg_list = self.suggestion_list.split('|')
         sugg_list.pop()
         #add remove from sugglist and add to run list
-        if id not in local_run_list:            
-            sugg_list.remove(id)            
+        if id not in local_run_list:
+            if id in sugg_list:                            
+                sugg_list.remove(id)            
             self.suggestion_list = ''
 
             self.run_list = ''
