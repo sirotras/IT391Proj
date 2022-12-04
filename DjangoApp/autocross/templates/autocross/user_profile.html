@@ -29,15 +29,10 @@ $(document).ready( function () {
     <h1 class="text-center">Account Profile</h1>
     <h2>Welcome: {{user.get_full_name}}</h2>
     <h4>Lifetime Cones hit: {{user.profile.total_cone_count}}</h4>
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
               Your Runs
-            </button>
           </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">
+
               <table id = "" class="display">
                 <thead>
               <th>Name</th>
@@ -46,6 +41,7 @@ $(document).ready( function () {
               <th>Date</th>
               <th>ID</th>              
               <th>Remove Run</th>
+              <th>Notes</th>
                 </thead>
             <tbody>
               {% for run,note in run_note_list %}
@@ -59,18 +55,37 @@ $(document).ready( function () {
                     <form action="#" method="get">
                         <button type="submit" class="btn btn-danger" value = "{{run.b_run_id}}" name="run_rem">Remove</button>
                     </form>
+                  </td>
+                  <td>
+                    <form action="#" method="get">
+                    <button class="btn btn-primary" type="submit" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" value = "{{note.note_id}}" name="note_id">
+                      Notes
+                    </button>
+                    </form>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <div>
+                          <form method = "POST">
+                            {% csrf_token  %}
+                            {{form.as_p}}
+                            <input type="submit">
+                          </form>
+                        </div>                        
+                      </div>
+                    </div>
+                    
                   </td>                                    
-              </tr>
+              </tr>              
               {% endfor %}
             </tbody>
               </table>
               <form action="#" method="get">
                 <button type="submit" class="btn btn-danger" value = "reset" name="run_reset">Reset Runs</button>
               </form>
-            </div>
-          </div>
-        </div>  
-    </div>
 
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">

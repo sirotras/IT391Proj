@@ -8,7 +8,7 @@ from django.urls import reverse_lazy
 from .models import Event, Best_run_data, Run_data, Profile, Run_notes
 from django.contrib.auth.models import User
 from fuzzywuzzy import fuzz
-from .forms import SignUpForm
+from .forms import SignUpForm, RunNotesForm
 from json import dumps
 
 
@@ -26,11 +26,21 @@ def home(request):
     return render(request, 'autocross/home.html', context = context)
 
 @login_required
-def user_profile(request):
-    current_user = request.user
-    #print(current_user.id)
+def user_profile(request):    
     current_profile = request.user.profile
     #print(current_profile.id)
+    instance = None
+    if(request.GET.get('note_id')):
+        print("InRequest")
+        print(request.GET['note_id'])
+        instance = Run_notes.objects.get(note_id = int(request.GET['note_id']))
+    #form = None
+    if request.method == 'POST':
+        form = RunNotesForm(request.POST or None, instance=instance)
+        if form.is_valid():
+            form.save()
+    else:
+        form = RunNotesForm(instance=instance)
     
     #update suggestions
     if(request.GET.get('suggbtn')):
@@ -76,7 +86,7 @@ def user_profile(request):
         note = Run_notes.objects.get(b_run_id = Best_run_data.objects.get(b_run_id = int(brun_id)))
         run_note_list.append((run,note))
 
-    context = {'sugg_run_list':sugg_run_list,'sugg_list':sugg_list, 'run_note_list':run_note_list,'events_checked':events_checked}    
+    context = {'sugg_run_list':sugg_run_list,'sugg_list':sugg_list, 'run_note_list':run_note_list,'events_checked':events_checked, 'form':form}    
     return render(request, 'autocross/user_profile.html', context=context)
 
 class SignUpView(CreateView):
