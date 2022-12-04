@@ -126,13 +126,6 @@ def analytics(request):
     context = {'run_list':run_run_list,'sugg_list':run_run_list, 'data1':dataJSON1, 'data2':dataJSON2 , 'cones':current_profile.total_cone_count}
     return render(request,'autocross/analytics.html', context=context)
 
-@login_required
-def dashboard(request):
-    return render(request,'autocross/dashboard.html')
-
-def leaderboard(request):
-    return render(request,'autocross/leaderboard.html')
-
 def all_events(request):
     years = ['2022','2021','2020']
     all_data = {'2022':'2022 Data', '2021':'2021 Data', '2020':'2020 Data'}
