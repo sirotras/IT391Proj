@@ -28,7 +28,7 @@ def home(request):
 @login_required
 def user_profile(request): 
     #get current user's profile   
-    current_profile = request.user.pronanfile
+    current_profile = request.user.profile
     
     #holds the current note instance by getting a note_id
     instance = None
