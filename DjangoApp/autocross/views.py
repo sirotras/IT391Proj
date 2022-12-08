@@ -28,7 +28,7 @@ def home(request):
 @login_required
 def user_profile(request): 
     #get current user's profile   
-    current_profile = request.user.profile
+    current_profile = request.user.pronanfile
     
     #holds the current note instance by getting a note_id
     instance = None
@@ -129,10 +129,10 @@ def analytics(request):
     run_run_list.sort(key=lambda x: x.run_id.event_id.date)
     #adding raw and pax data to coordinates1 & 2
     for run in run_run_list:
-        if run.raw_diff_first != "":
+        if run.raw_diff_first != "N/A":
             coordinates1.append(str(run.run_id.event_id.date))
             coordinates1.append(str(run.raw_diff_first))
-        if run.pax_diff_first != "":
+        if run.pax_diff_first != "N/A":
             coordinates2.append(str(run.run_id.event_id.date))
             coordinates2.append(str(run.pax_diff_first)) 
     dataJSON1 = dumps(coordinates1)        
